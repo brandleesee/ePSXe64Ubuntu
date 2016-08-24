@@ -1,6 +1,6 @@
 # ePSXe4Ubuntu
 
-Interactive auto-install ePSXe on Ubuntu.
+Interactive script to auto-install ePSXe on Ubuntu.
 
 Tested on Ubuntu 16.04 (Unity) & Ubuntu Gnome 16.04.
 
@@ -10,7 +10,7 @@ wget https://raw.githubusercontent.com/brandleesee/ePSXe4Ubuntu/master/e4u.sh
 
 bash e4u.sh
 
-ePSXe will open its GUI. You are required to close it in order to continue with the script. This will create the hidden .epsxe folder in Documents
+ePSXe will eventually open its GUI; close it to continue with the script. 
 
 ## Set-Up
 
