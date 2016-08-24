@@ -10,7 +10,7 @@ wget https://raw.githubusercontent.com/brandleesee/ePSXe4Ubuntu/master/e4u.sh
 
 bash e4u.sh
 
-ePSXe will eventually open its GUI; close it to continue with the script. 
+Script will eventually open its GUI; close it to continue with the script. 
 
 ## Set-Up
 
