@@ -14,11 +14,11 @@ Script will eventually open its GUI; close it to continue with the script.
 
 ## Set-Up
 
-Temporary files will be created to download and unzip everything.
-
 Folder ePSXe will be created in Home folder <code>~/ePSXe</code>.
 
 libsdl-ttf2.0-0 will be installed.
+
+All downloaded *.zip files are removed once set-up is complete.
 
 ## Current Shortcomings
 
