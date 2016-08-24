@@ -12,6 +12,10 @@ Ubuntu Unity 16.04 x64
 
 Ubuntu Gnome 16.04 x64
 
+## ePSXe Version
+
+ePSXe v2.0.5 Linux x64
+
 ## HOW-TO
 
 wget https://raw.githubusercontent.com/brandleesee/ePSXe4Ubuntu/master/e4u.sh
