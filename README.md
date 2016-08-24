@@ -1,8 +1,16 @@
 # ePSXe4Ubuntu
 
-Interactive script to auto-install ePSXe on Ubuntu including configurations, plugins and shaders. However, see Current Shortcomings below. <strong>Script is considered as ALPHA.</strong>
+Interactive script to auto-install ePSXe on Ubuntu.
 
-Tested on Ubuntu 16.04 (Unity) & Ubuntu Gnome 16.04. Both x64.
+Includes configurations, plugins and shaders. 
+
+However, see Current Shortcomings below as <strong>script is still ALPHA.</strong>
+
+## Tested on 
+
+Ubuntu Unity 16.04 x64
+
+Ubuntu Gnome 16.04 x64
 
 ## HOW-TO
 
