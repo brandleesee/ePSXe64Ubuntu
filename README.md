@@ -1,12 +1,20 @@
-# ePSXe4Ubuntu
+# ePSXe4Ubuntu - Pre-Alpha Release
 
 Interactive script to auto-install ePSXe on Ubuntu.
 
 Includes configurations, plugins and shaders. 
 
-However, see Current Shortcomings below as <strong>script is still ALPHA.</strong>
+## Current Shortcomings
 
-## Tested on 
+No ROMs have been tested yet.
+
+Config wizard does not work.
+
+Cannot Lock to Launcher.
+
+Plugins do not work.
+
+## Installation tested on 
 
 Ubuntu Unity 16.04 x64
 
@@ -31,14 +39,6 @@ Folder ePSXe will be created in Home folder <code>~/ePSXe</code>.
 libsdl-ttf2.0-0 will be installed.
 
 All downloaded *.zip files are removed once set-up is complete.
-
-## Current Shortcomings
-
-Config wizard does not work.
-
-Cannot Lock to Launcher.
-
-Plugins do not work.
 
 ## More plugins
 
