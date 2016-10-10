@@ -21,31 +21,24 @@ libsdl-ttf2.0-0 will be installed.
 
 All downloaded compressed files are removed once set-up is complete.
 
-## Current Shortcomings
-
-Cannot Lock to Launcher.
-
-Config --> Plugins --> Video/Audio/etc currently close ePSXe - emailed developers.
-
-## Issues
+### Issues
 
 Please quote title when submitting issues and/or suggestions.
 
 The script is designed in such a way that whatever is happenning is clearly explained in the section's title/sub-heading.
 
-## Installation tested on 
+* Cannot Lock to Launcher.
+* Config --> Plugins --> Video/Audio/etc currently close ePSXe - emailed developers.
 
-Ubuntu Unity 16.04 x64
+## Tested on 
 
-Ubuntu Gnome 16.04 x64
+* Ubuntu Unity 16.04 x64
+* Ubuntu Gnome 16.04 x64
+* Ubuntu Unity 16.10 x64
+* Ubuntu Gnome 16.10 x64
 
-Ubuntu Unity 16.10 x64
-
-Ubuntu Gnome 16.10 x64
-
-## ePSXe Version
-
-ePSXe v2.0.5 Linux x64
+### ePSXe Version
+2.0.5 Linux x64
 
 ## More plugins
 
