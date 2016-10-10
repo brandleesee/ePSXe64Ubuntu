@@ -1,6 +1,6 @@
-![](http://i.imgur.com/Ja5u4Dg.png)
-
 # ePSXe4Ubuntu - Alpha Release
+
+![](http://i.imgur.com/Ja5u4Dg.png)
 
 Interactive script to install ePSXe and shaders on Ubuntu.
 
