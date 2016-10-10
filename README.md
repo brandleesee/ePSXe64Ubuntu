@@ -18,8 +18,6 @@ Script will ask for SUDO password and eventually open GUI of ePSXe.
 
 **CLOSE** the ePSXe window to continue with the script. 
 
-### Set-Up
-
 ![](http://i.imgur.com/p8vMQDt.png)
 
 Folder ePSXe will be created in Home folder ` ~/ePSXe `.
