@@ -36,7 +36,7 @@ Please **quote sub-heading(s)** when submitting issues and/or suggestions.
 The script is designed in such a way that whatever is happenning is clearly explained in the section's title/sub-heading.
 
 * Cannot Lock to Launcher.
-* Selecting ` Config --> Plugins --> Video/Audio/etc ` currently kills ePSXe - emailed developers ([same imgur.comvideo](https://www.youtube.com/watch?v=Ru49bfyXijw)).
+* Selecting ` Config --> Plugins --> Video/Audio/etc ` currently kills ePSXe - emailed developers ([same video](https://www.youtube.com/watch?v=Ru49bfyXijw)).
 
 ## Tested on 
 
