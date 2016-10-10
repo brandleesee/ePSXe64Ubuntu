@@ -6,9 +6,10 @@ Config Wizard is not present - emailed developers.
 
 ## HOW-TO
 
+```
 wget https://raw.githubusercontent.com/brandleesee/ePSXe4Ubuntu/master/e4u.sh
-
 bash e4u.sh
+```
 
 Script will ask for SUDO password and eventually open GUI of ePSXe. <strong>CLOSE</strong> the ePSXe window to continue with the script. 
 
