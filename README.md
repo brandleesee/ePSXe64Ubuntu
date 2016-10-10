@@ -2,16 +2,19 @@
 
 Interactive script to install ePSXe and shaders on Ubuntu.
 
-Config Wizard is not present - emailed developers.
+` Config --> Wizard Guide ` is not present - emailed developers.
 
 ## HOW-TO
 
 ```
 wget https://raw.githubusercontent.com/brandleesee/ePSXe4Ubuntu/master/e4u.sh
+
 bash e4u.sh
 ```
 
-Script will ask for SUDO password and eventually open GUI of ePSXe. **CLOSE** the ePSXe window to continue with the script. 
+Script will ask for SUDO password and eventually open GUI of ePSXe. 
+
+**CLOSE** the ePSXe window to continue with the script. 
 
 ### Set-Up
 
@@ -23,12 +26,12 @@ All downloaded compressed files are removed once set-up is complete.
 
 ### Issues
 
-Please quote title when submitting issues and/or suggestions.
+Please **quote sub-heading(s)** when submitting issues and/or suggestions.
 
 The script is designed in such a way that whatever is happenning is clearly explained in the section's title/sub-heading.
 
 * Cannot Lock to Launcher.
-* Config --> Plugins --> Video/Audio/etc currently close ePSXe - emailed developers.
+* Selecting ` Config --> Plugins --> Video/Audio/etc ` currently kills ePSXe - emailed developers.
 
 ## Tested on 
 
@@ -38,4 +41,5 @@ The script is designed in such a way that whatever is happenning is clearly expl
 * Ubuntu Gnome 16.10 x64
 
 ### ePSXe Version
-2.0.5 Linux x64
+
+* 2.0.5 Linux x64
