@@ -11,13 +11,13 @@ wget https://raw.githubusercontent.com/brandleesee/ePSXe4Ubuntu/master/e4u.sh
 bash e4u.sh
 ```
 
-Script will ask for SUDO password and eventually open GUI of ePSXe. <strong>CLOSE</strong> the ePSXe window to continue with the script. 
+Script will ask for SUDO password and eventually open GUI of ePSXe. **CLOSE** the ePSXe window to continue with the script. 
 
-## Set-Up
+### Set-Up
 
-Folder ePSXe will be created in Home folder <code>~/ePSXe</code>.
+Folder ePSXe will be created in Home folder ` ~/ePSXe `.
 
-libsdl-ttf2.0-0 will be installed.
+` libsdl-ttf2.0-0 ` will be installed.
 
 All downloaded compressed files are removed once set-up is complete.
 
@@ -39,7 +39,3 @@ The script is designed in such a way that whatever is happenning is clearly expl
 
 ### ePSXe Version
 2.0.5 Linux x64
-
-## More plugins
-
-http://www.razyboard.com/system/user_Pete_Bernert.html
