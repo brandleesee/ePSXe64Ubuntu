@@ -6,7 +6,7 @@ Interactive script to install ePSXe and shaders on Ubuntu using built-in core GP
 
 ## Installation
 
-1. Download script.
+* Download script.
 
 ```
 wget https://raw.githubusercontent.com/brandleesee/ePSXe4Ubuntu/master/e4u.sh
@@ -14,21 +14,21 @@ wget https://raw.githubusercontent.com/brandleesee/ePSXe4Ubuntu/master/e4u.sh
 bash e64u.sh
 ```
 
-2. Download required dependency.
- * ` libsdl-ttf2.0-0 ` will be installed.
- * Enter SUDO password.
+* Download required dependency.
+ - ` libsdl-ttf2.0-0 ` will be installed.
+ - Enter SUDO password.
 
-3. GUI
- * ePSXe GUI will open. 
- * **CLOSE** the ePSXe window to continue with the script. 
+* GUI
+ - ePSXe GUI will open. 
+ - **CLOSE** the ePSXe window to continue with the script. 
 
 ![](http://i.imgur.com/p8vMQDt.png)
 
-4. Create Directories
- * Folder ` ~/ePSXe ` will be created in Home  ` ~ ` directory.
- * Hidden folder ` ~/.epsxe ` will also be created in Home  ` ~ ` directory.
+* Create Directories
+ - Folder ` ~/ePSXe ` will be created in Home  ` ~ ` directory.
+ - Hidden folder ` ~/.epsxe ` will also be created in Home  ` ~ ` directory.
 
-5. Removal of downloaded compressed files & extra directories.
+* Removal of downloaded compressed files & extra directories.
 
 ![](http://i.imgur.com/w4Ua94W.png)
 Your permissions may vary.
