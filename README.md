@@ -35,6 +35,10 @@ All downloaded compressed files are removed once set-up is complete.
 
 * ` Config --> Wizard Guide ` is not present.
 * Selecting ` Config --> Plugins --> Video/Audio/etc ` kills ePSXe ([video](https://www.youtube.com/watch?v=Ru49bfyXijw)). This is because Pete's [GPU](http://www.pbernert.com/html/gpu.htm) & [SPU](http://www.pbernert.com/html/spu.htm) plugins are only compiled for x32 architecture. I have so far been unable to get them to work in spite of a multiarch architecture. [More info](http://ngemu.com/threads/v2-0-5-linux-x64.188425/).
+ - Terminal output
+   ```bash
+   /home/blc/.epsxe/plugins//libgpuPeopsMesaGL.so.1.0.78: wrong ELF class: ELFCLASS32
+   ```
 
 ## TODO List
 
