@@ -1,26 +1,28 @@
-# ePSXe4Ubuntu - Alpha Release
+# ePSXe64Ubuntu - Alpha Release
 
 ![](http://i.imgur.com/Ja5u4Dg.png)
 
-Interactive script to install ePSXe and shaders on Ubuntu.
+Interactive script to install ePSXe and shaders on Ubuntu using built-in core GPU & SPU plugins.
 
-` Config --> Wizard Guide ` is not present - emailed developers ([video](https://www.youtube.com/watch?v=Ru49bfyXijw)).
+## Installation
 
-## HOW-TO
-
-```
+```bash
 wget https://raw.githubusercontent.com/brandleesee/ePSXe4Ubuntu/master/e4u.sh
 
-bash e4u.sh
+bash e64u.sh
 ```
 
-Script will ask for SUDO password and eventually open GUI of ePSXe. 
+Enter SUDO password.
+
+ePSXe GUI will open. 
 
 **CLOSE** the ePSXe window to continue with the script. 
 
 ![](http://i.imgur.com/p8vMQDt.png)
 
-Folder ePSXe will be created in Home folder ` ~/ePSXe `.
+Folder ` ~/ePSXe ` will be created in Home  ` ~ ` directory.
+
+Hidden folder ` ~/.epsxe ` will also be created in Home  ` ~ ` directory.
 
 ` libsdl-ttf2.0-0 ` will be installed.
 
@@ -29,21 +31,26 @@ Your permissions may vary.
 
 All downloaded compressed files are removed once set-up is complete.
 
-### Issues
+# Shortcomings from ePSXe & Plugins Developers
 
-Please **quote sub-heading(s)** when submitting issues and/or suggestions.
+* ` Config --> Wizard Guide ` is not present.
+* Selecting ` Config --> Plugins --> Video/Audio/etc ` kills ePSXe ([video](https://www.youtube.com/watch?v=Ru49bfyXijw)). This is because Pete's [GPU](http://www.pbernert.com/html/gpu.htm) & [SPU](http://www.pbernert.com/html/spu.htm) plugins are only compiled for x32 architecture. I have so far been unable to get them to work in spite of a multiarch architecture. [More info](http://ngemu.com/threads/v2-0-5-linux-x64.188425/).
 
-The script is designed in such a way that whatever is happenning is clearly explained in the section's title/sub-heading.
+## TODO List
 
-* Cannot Lock to Launcher.
-* Selecting ` Config --> Plugins --> Video/Audio/etc ` currently kills ePSXe - emailed developers ([same video](https://www.youtube.com/watch?v=Ru49bfyXijw)).
+- [ ] Lock to Launcher.
+
+## Submitting Issues
+
+**Quote sub-heading(s)** from script ` e64u.sh `.
 
 ## Tested on 
 
-* Ubuntu Unity 16.04 x64
-* Ubuntu Gnome 16.04 x64
-* Ubuntu Unity 16.10 x64
-* Ubuntu Gnome 16.10 x64
+* Ubuntu Unity 16.04 x64 multiarch
+* Ubuntu Gnome 16.04 x64 multiarch
+* Ubuntu Unity 16.10 x64 multiarch
+* Ubuntu Gnome 16.10 x64 multiarch
+* Ubuntu Gnome x64 devel multiarch
 
 ### ePSXe Version
 
