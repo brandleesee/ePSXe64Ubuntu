@@ -14,19 +14,19 @@ wget https://raw.githubusercontent.com/brandleesee/ePSXe4Ubuntu/master/e4u.sh
 bash e64u.sh
 ```
 
-2. a. ` libsdl-ttf2.0-0 ` will be installed.
+2. Download required dependency.
+ * ` libsdl-ttf2.0-0 ` will be installed.
+ * Enter SUDO password.
 
-2. b. Enter SUDO password.
-
-3. a. ePSXe GUI will open. 
-
-3. b. **CLOSE** the ePSXe window to continue with the script. 
+3. GUI
+ * ePSXe GUI will open. 
+ * **CLOSE** the ePSXe window to continue with the script. 
 
 ![](http://i.imgur.com/p8vMQDt.png)
 
-4. a. Folder ` ~/ePSXe ` will be created in Home  ` ~ ` directory.
-
-4. b. Hidden folder ` ~/.epsxe ` will also be created in Home  ` ~ ` directory.
+4. Create Directories
+ * Folder ` ~/ePSXe ` will be created in Home  ` ~ ` directory.
+ * Hidden folder ` ~/.epsxe ` will also be created in Home  ` ~ ` directory.
 
 5. Removal of downloaded compressed files & extra directories.
 
