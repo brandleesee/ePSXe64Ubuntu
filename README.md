@@ -1,4 +1,4 @@
-# ePSXe64Ubuntu - 5th Release (Major Version)
+# ePSXe64Ubuntu - 5th Release (Major Revision)
 
 ![](http://i.imgur.com/2Bw3iLS.png)
 
