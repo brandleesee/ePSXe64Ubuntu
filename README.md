@@ -1,4 +1,4 @@
-# ePSXe64Ubuntu - 4th Release
+# ePSXe64Ubuntu - 5th Release (Major Version)
 
 ![](http://i.imgur.com/2Bw3iLS.png)
 
@@ -31,26 +31,14 @@ bash e64u.sh
  - Hidden folder ` ~/.epsxe ` will be created in Home  ` ~ ` directory.
 
 * Removal of downloaded compressed files & extra directories.
-
-## Shortcomings from ePSXe & Plugins Developers
-
-* When using Pete's [GPU](http://www.pbernert.com/html/gpu.htm) & [SPU](http://www.pbernert.com/html/spu.htm) plugins and selecting ` Config --> Plugins --> Video/Audio/etc ` ePSXe closes ([video](https://www.youtube.com/watch?v=Ru49bfyXijw)).
- - Reason:  Plugins are only compiled for x32 architecture.
- - Terminal output:
-   `  /home/blc/.epsxe/plugins//libgpuPeopsMesaGL.so.1.0.78: wrong ELF class: ELFCLASS32   `
- - [More info](http://ngemu.com/threads/v2-0-5-linux-x64.188425/).
  
-![](http://i.imgur.com/fRardY8.gif)
- 
-* ` Config --> Wizard Guide ` is not present.
- 
-## TODO List
+## Deficienices
 
 - [ ] Lock to Launcher.
 
-## Submitting Issues
+* Linux x64 version does not have the  ` Config --> Wizard Guide ` .
 
-**Quote sub-heading(s)** from script ` e64u.sh `.
+When submitting issues, **quote sub-heading(s)** from script.
 
 ## Tested on 
 
@@ -77,6 +65,8 @@ bash e64u.sh
 ![](http://i.imgur.com/57kdpJR.png)
 
 ## Gallery
+
+![](http://i.imgur.com/fRardY8.gif)
 
 ![](http://i.imgur.com/Ja5u4Dg.png)
 
