@@ -1,5 +1,7 @@
 ## Scripts Derived from ePSXe64Ubuntu
 
+*Hidden folder: .epsxe is assumed to already be in place*
+
 ### Install ePSXe without shaders and bios
 
 ```
