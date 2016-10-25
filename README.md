@@ -2,7 +2,9 @@
 
 ![](http://i.imgur.com/2Bw3iLS.png)
 
-Interactive script to install ePSXe Linux (x64) v2.0.5 and shaders on Ubuntu x64 using built-in core GPU & SPU plugins for gameplay.
+## Overview
+
+Interactive script to install ePSXe and shaders on Ubuntu using built-in core GPU & SPU plugins for gameplay.
 
 ## Installation
 
