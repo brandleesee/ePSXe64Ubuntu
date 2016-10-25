@@ -36,7 +36,7 @@ bash e64u.sh
 
 - [ ] Lock to Launcher.
 
-* Linux x64 version does not have the  ` Config --> Wizard Guide ` .
+Linux x64 version does not have the  ` Config --> Wizard Guide ` .
 
 When submitting issues, **quote sub-heading(s)** from script.
 
