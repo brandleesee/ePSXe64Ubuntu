@@ -34,6 +34,7 @@ bash e64u.sh
  
 ## Deficienices
 
+- [ ] Add more shaders.
 - [ ] Lock to Launcher.
 
 Linux x64 version does not have the  ` Config --> Wizard Guide ` .
