@@ -1,4 +1,4 @@
-# ePSXe64Ubuntu - 5th Release (Major Revision) - v5.1
+# ePSXe64Ubuntu - 5th Release (Major Revision) - v5.2
 
 ![](http://i.imgur.com/2Bw3iLS.png)
 
@@ -29,6 +29,7 @@ bash e64u.sh
 * Creation of Executable & Directories
  - Executable ` epsxe ` will be created in Home  ` ~ ` directory.
  - Hidden folder ` ~/.epsxe ` will be created in Home  ` ~ ` directory.
+ - Shaders are downloaded from this repository.
 
 * Removal of downloaded compressed files & extra directories.
  
