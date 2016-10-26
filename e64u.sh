@@ -70,7 +70,7 @@ echo "    ================"
 echo "    Download shaders"
 echo "    ================"
 echo
-		wget http://www.epsxe.com/files/shaders.zip -P /tmp/ePSXe
+		wget https://github.com/brandleesee/ePSXe64Ubuntu/raw/master/shaders.zip -P /tmp/ePSXe
 echo
 echo "    ==============="
 echo "    Extract shaders"
@@ -121,7 +121,6 @@ echo "  =============================="
 echo
 		rm -rf /tmp/ePSXe
 		rm -rf ~/ePSXe
-		rm -rf ~/.epsxe/shaders/shaders
 echo
 echo "***************"
 echo "ePSXe Installed"
