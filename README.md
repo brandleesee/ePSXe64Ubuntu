@@ -11,7 +11,7 @@ Interactive script to install ePSXe and shaders on Ubuntu using built-in core GP
 * Download script.
 
 ```
-wget https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/e64u.sh
+wget -O e64u.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/e64u.sh
 
 bash e64u.sh
 ```
