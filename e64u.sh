@@ -107,7 +107,7 @@ echo
 		mv '/tmp/ePSXe/PSX/PSX - SCPH3000.bin' ~/.epsxe/bios/scph3000.bin
 		mv '/tmp/ePSXe/PSX/PSX - SCPH3500.bin' ~/.epsxe/bios/scph3500.bin
 		mv '/tmp/ePSXe/PSX/PSX - SCPH5500.BIN' ~/.epsxe/bios/scph5500.bin
-		mv '/tmp/ePSXe/PSX/PSX - SCPH7003.BIN' ~/.epsxe/bios/scph5501.bin
+		cp -i '/tmp/ePSXe/PSX/PSX - SCPH7003.BIN' ~/.epsxe/bios/scph5501.bin
 		mv '/tmp/ePSXe/PSX/PSX - SCPH5502.BIN' ~/.epsxe/bios/scph5502.bin
 		mv '/tmp/ePSXe/PSX/PSX - SCPH5552.bin' ~/.epsxe/bios/scph5503.bin
 		mv '/tmp/ePSXe/PSX/PSX - SCPH7000.BIN' ~/.epsxe/bios/scph7000.bin
