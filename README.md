@@ -1,4 +1,4 @@
-# ePSXe64Ubuntu - 5th Release (Major Revision)
+# ePSXe64Ubuntu - 5th Release (Major Revision) - v5.1
 
 ![](http://i.imgur.com/2Bw3iLS.png)
 
@@ -11,7 +11,7 @@ Interactive script to install ePSXe and shaders on Ubuntu using built-in core GP
 * Download script.
 
 ```
-wget https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/e4u.sh
+wget https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/e64u.sh
 
 bash e64u.sh
 ```
