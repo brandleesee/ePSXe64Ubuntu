@@ -1,10 +1,10 @@
-# ePSXe64Ubuntu - 5th Release (Major Revision) - v5.2
+# ePSXe64Ubuntu - 6th Release (Removed questionable download link.)
 
 ![](http://i.imgur.com/2Bw3iLS.png)
 
 ## Overview
 
-Interactive script to install ePSXe and shaders on Ubuntu using built-in core GPU & SPU plugins for gameplay.
+Interactive script to install ePSXe and shaders on Ubuntu using built-in BIOS HLE and core GPU & SPU plugins for gameplay.
 
 ## Installation
 
