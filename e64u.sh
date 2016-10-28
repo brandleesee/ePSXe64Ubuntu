@@ -85,7 +85,6 @@ echo "    ==============="
 echo
 		unzip /tmp/ePSXe/shaders.zip -d ~/.epsxe/shaders
 echo
-echo
 echo "  =============================="
 echo "  Removing Temporary Directories"
 echo "  =============================="
