@@ -1,10 +1,10 @@
 ## Scripts Derived from ePSXe64Ubuntu
 
-### Install ePSXe without shaders and bios
+### Install ePSXe without shaders
 
 ```
-wget -O epsxe_no-shaders_no-bios.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/siblings/epsxe_no-shaders_no-bios.sh
-bash epsxe_no-shaders_no-bios.sh
+wget -O epsxe_only.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/siblings/epsxe_only.sh
+bash epsxe_only.sh
 ```
 
 ### Install Shaders only
@@ -14,11 +14,4 @@ bash epsxe_no-shaders_no-bios.sh
 ```
 wget -O shaders-only.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/siblings/shaders-only.sh
 bash shaders-only.sh
-```
-
-### Install ePSXe and Shaders - no BIOS
-
-```
-wget -O epsxe_shaders_no-bios.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/siblings/epsxe_shaders_no-bios.sh
-bash epsxe_shaders_no-bios.sh
 ```
