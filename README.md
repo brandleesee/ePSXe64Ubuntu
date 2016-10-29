@@ -33,10 +33,16 @@ bash e64u.sh
 
 * Removal of downloaded compressed files & extra directories.
  
-## To Do List
+## Features
 
+- [x] Installs specific dependency.
+- [x] Removes duplicate downloads.
+- [x] Application Icon.
+- [x] Default creation of .desktop .
 - [x] Lock to Launcher.
-- [ ] Add Back Up of sstates, memcards & cheats.
+- [ ] Back Up function.
+- [ ] Ask whether to activate BIOS HLE + add note to look elsewhere for proprietory BIOS.
+- [ ] Ask whether shaders are to be installed.
 - [ ] Add more shaders.
 
 Linux x64 version does not have the  ` Config --> Wizard Guide ` .
