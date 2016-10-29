@@ -1,4 +1,4 @@
-# ePSXe64Ubuntu - 6th Release (Removed questionable download link.)
+# ePSXe64Ubuntu - 7th Release - Major Rewrite
 
 ![](http://i.imgur.com/2Bw3iLS.png)
 
@@ -33,10 +33,11 @@ bash e64u.sh
 
 * Removal of downloaded compressed files & extra directories.
  
-## Deficienices
+## To Do List
 
+- [x] Lock to Launcher.
+- [ ] Add Back Up of sstates, memcards & cheats.
 - [ ] Add more shaders.
-- [ ] Lock to Launcher.
 
 Linux x64 version does not have the  ` Config --> Wizard Guide ` .
 
