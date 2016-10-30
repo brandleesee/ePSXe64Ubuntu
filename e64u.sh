@@ -5,7 +5,6 @@
 # contact: brandon.camilleri.90@gmail.com
 # repository: https://github.com/brandleesee/ePSXe64Ubuntu
 
-FILE=""
 ins="ePSXe205linux_x64.zip"
 hid="/home/$USER/.epsxe"
 dir="/home/$USER/ePSXe"
