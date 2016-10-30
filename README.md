@@ -1,4 +1,4 @@
-# ePSXe64Ubuntu - 7th Release - Major Rewrite
+# ePSXe64Ubuntu - v7.1
 
 ![](http://i.imgur.com/2Bw3iLS.png)
 
