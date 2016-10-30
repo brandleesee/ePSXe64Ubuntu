@@ -8,34 +8,19 @@ Interactive script to install ePSXe and shaders on Ubuntu using built-in BIOS HL
 
 ## Installation
 
-* Download script.
-
 ```
 wget -O e64u.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/e64u.sh
 
 bash e64u.sh
 ```
 
-* Download required dependency.
- - ` libsdl-ttf2.0-0 ` will be installed.
- - Enter SUDO password.
+* Enter SUDO password.
 
-* GUI
- - ePSXe GUI will open. 
- - **CLOSE** the ePSXe window to continue with the script. 
-
-![](http://i.imgur.com/2mT7smo.png)
-
-* Creation of Executable & Directories
- - Executable ` epsxe ` will be created in Home  ` ~ ` directory.
- - Hidden folder ` ~/.epsxe ` will be created in Home  ` ~ ` directory.
- - Shaders are downloaded from this repository.
-
-* Removal of downloaded compressed files & extra directories.
+* **CLOSE** ePSXe window to continue with the script. 
  
 ## Features
 
-- [x] Installs specific dependency.
+- [x] Installs specific dependency.  `  libsdl-ttf2.0-0  `
 - [x] Removes duplicate downloads.
 - [x] Application Icon.
 - [x] Default creation of .desktop .
@@ -44,10 +29,6 @@ bash e64u.sh
 - [ ] Ask whether to activate BIOS HLE + add note to look elsewhere for proprietory BIOS.
 - [ ] Ask whether shaders are to be installed.
 - [ ] Add more shaders.
-
-Linux x64 version does not have the  ` Config --> Wizard Guide ` .
-
-When submitting issues, **quote sub-heading(s)** from script.
 
 ## Tested on 
 
@@ -64,15 +45,5 @@ When submitting issues, **quote sub-heading(s)** from script.
 ```
   2.0.5 Linux x64
 ```
-
-## Current Video Settings - using shaders
-
-![](http://i.imgur.com/ZBFCUva.png)
-
-## Current Audio Settings
-
-![](http://i.imgur.com/57kdpJR.png)
-
-## Gallery
 
 ![](http://i.imgur.com/fRardY8.gif)
