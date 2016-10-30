@@ -76,11 +76,3 @@ When submitting issues, **quote sub-heading(s)** from script.
 ## Gallery
 
 ![](http://i.imgur.com/fRardY8.gif)
-
-![](http://i.imgur.com/Ja5u4Dg.png)
-
-![](http://i.imgur.com/p8vMQDt.png)
-
-![](http://i.imgur.com/w4Ua94W.png)
-
-![](http://i.imgur.com/MDQabuy.png)
