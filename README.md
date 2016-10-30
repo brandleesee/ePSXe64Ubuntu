@@ -16,7 +16,7 @@ bash e64u.sh
 
 * Enter SUDO password.
 
-* **CLOSE** ePSXe window to continue with the script. 
+* **CLOSE** ePSXe window to continue with script. 
  
 ## Features
 
