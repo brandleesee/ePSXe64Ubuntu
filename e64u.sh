@@ -19,7 +19,7 @@ echo "  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 echo "  INTERACTIVITY 1 : SUDO password required"
 echo "  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 echo
-		sudo apt-get -y install libsdl-ttf2.0-0 unzip
+		sudo apt-get -y install libsdl-ttf2.0-0 libcurl3 unzip
 echo
 echo "*****"
 echo "ePSXe"
