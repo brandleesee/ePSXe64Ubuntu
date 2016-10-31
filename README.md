@@ -1,4 +1,4 @@
-# ePSXe64Ubuntu - v7.2
+# ePSXe64Ubuntu - v7.3
 
 ![](http://i.imgur.com/2Bw3iLS.png)
 
@@ -39,6 +39,7 @@ bash e64u.sh
   Ubuntu Gnome 16.10 x64 multiarch
   Ubuntu Gnome devel x64 multiarch
   Linux Mint 17.3 x64
+  Xubuntu 16.04 x64
 ```
 
 ## ePSXe Version
