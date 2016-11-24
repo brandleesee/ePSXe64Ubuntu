@@ -1,4 +1,4 @@
-# ePSXe64Ubuntu - v7.3
+# ePSXe64Ubuntu - v8 - Major Revision with BackUp Function
 
 ![](http://i.imgur.com/2Bw3iLS.png)
 
@@ -15,8 +15,9 @@ An interactive script that installs ePSXe 2.0.5 Linux x64 on Ubuntu x64 and its 
 - [x] Installs Dash / Dock application icon.
 - [x] Creates ` .desktop ` by default.
 - [x] Locks to Launcher.
-- [ ] Back Up function.
-- [ ] Add more shaders.
+- [x] Back Up function.
+- [ ] Differentiate between backed-up and new versions of ` epsxerc `.
+- [ ] Add more shaders (continuously added after rigorous testing).
 
 ## Installation
 
