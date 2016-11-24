@@ -1,7 +1,5 @@
 # ePSXe64Ubuntu - v8 - Major Revision with BackUp Function
 
-![](http://i.imgur.com/2Bw3iLS.png)
-
 ## Overview
 
 An interactive script that installs ePSXe 2.0.5 Linux x64 on Ubuntu x64 and its derivatives.
@@ -42,5 +40,3 @@ bash e64u.sh
   Linux Mint 17.3 x64
   Xubuntu 16.04 x64
 ```
-
-![](http://i.imgur.com/fRardY8.gif)
