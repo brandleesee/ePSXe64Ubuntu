@@ -4,7 +4,19 @@
 
 ## Overview
 
-Interactive script to install ePSXe and shaders on Ubuntu using built-in BIOS HLE and core GPU & SPU plugins for gameplay.
+An interactive script that installs ePSXe 2.0.5 Linux x64 on Ubuntu x64 and its derivatives.
+
+## Features
+
+- [x] Uses built-in BIOS HLE.
+- [x] Uses built-in Core GPU & SPU plugins.
+- [x] Installs specific ePSXe dependency:  `  libsdl-ttf2.0-0  `.
+- [x] Removes duplicate downloads.
+- [x] Installs Dash / Dock application icon.
+- [x] Creates ` .desktop ` by default.
+- [x] Locks to Launcher.
+- [ ] Back Up function.
+- [ ] Add more shaders.
 
 ## Installation
 
@@ -18,18 +30,6 @@ bash e64u.sh
 
 * **CLOSE** ePSXe window to continue with script. 
  
-## Features
-
-- [x] Installs specific dependency.  `  libsdl-ttf2.0-0  `
-- [x] Removes duplicate downloads.
-- [x] Application Icon.
-- [x] Default creation of .desktop .
-- [x] Lock to Launcher.
-- [ ] Back Up function.
-- [ ] Ask whether to activate BIOS HLE + add note to look elsewhere for proprietory BIOS.
-- [ ] Ask whether shaders are to be installed.
-- [ ] Add more shaders.
-
 ## Tested on 
 
 ```
@@ -40,12 +40,6 @@ bash e64u.sh
   Ubuntu Gnome devel x64 multiarch
   Linux Mint 17.3 x64
   Xubuntu 16.04 x64
-```
-
-## ePSXe Version
-
-```
-  2.0.5 Linux x64
 ```
 
 ![](http://i.imgur.com/fRardY8.gif)
