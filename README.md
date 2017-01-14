@@ -1,12 +1,12 @@
-# ePSXe64Ubuntu - v8.1 - now includes ecm tools
+## ePSXe64Ubuntu - v8.1 - now includes ecm tools
 
 ![](http://i.imgur.com/kfMSU17.png)
 
-## Overview
+### Overview
 
 An interactive script that installs ePSXe 2.0.5 Linux x64 on Ubuntu x64 and its derivatives.
 
-## Features
+### Features
 
 - [x] Uses built-in BIOS HLE.
 - [x] Uses built-in Core GPU & SPU plugins.
@@ -20,9 +20,11 @@ An interactive script that installs ePSXe 2.0.5 Linux x64 on Ubuntu x64 and its 
 - [ ] Differentiate between backed-up and new versions of ` epsxerc `.
 - [ ] Add more shaders (continuously added after rigorous testing).
 
+### Typical Installation
+
 ![](http://i.imgur.com/W1zggGH.gif)
 
-## Installation
+### Installation Procedure
 
 ```
 wget -O e64u.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/e64u.sh
@@ -34,9 +36,10 @@ bash e64u.sh
 
 * **CLOSE** ePSXe window to continue with script. 
 
-## Decompressing using ecm
+### Decompressing using ecm
 
 ```
 cd [INSERT LOCATION of DOWNLOAD]
+
 ecm-uncompress 'long name of game.___.ecm'
 ```
