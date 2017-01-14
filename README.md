@@ -11,6 +11,7 @@ An interactive script that installs ePSXe 2.0.5 Linux x64 on Ubuntu x64 and its 
 - [x] Uses built-in BIOS HLE.
 - [x] Uses built-in Core GPU & SPU plugins.
 - [x] Installs specific ePSXe dependency:  `  libsdl-ttf2.0-0  `.
+- [x] Installs decompression tool:  `  ecm  `.
 - [x] Removes duplicate downloads.
 - [x] Installs Dash / Dock application icon.
 - [x] Creates ` .desktop ` by default.
@@ -32,4 +33,11 @@ bash e64u.sh
 * Enter SUDO password.
 
 * **CLOSE** ePSXe window to continue with script. 
+```
+
+## Decompressing using ecm
+
+```
+cd [INSERT LOCATION of DOWNLOAD]
+ecm-uncompress 'long name of game.___.ecm'
 ```
