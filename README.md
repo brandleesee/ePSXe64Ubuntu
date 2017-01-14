@@ -1,4 +1,4 @@
-# ePSXe64Ubuntu - v8 - Major Revision with BackUp Function
+# ePSXe64Ubuntu - v8.1 - now includes ecm tools
 
 ![](http://i.imgur.com/kfMSU17.png)
 
@@ -32,17 +32,4 @@ bash e64u.sh
 * Enter SUDO password.
 
 * **CLOSE** ePSXe window to continue with script. 
- 
-## Tested on 
-
-```
-  Ubuntu Unity 16.04 x64 multiarch
-  Ubuntu Gnome 16.04 x64 multiarch
-  Ubuntu Unity 16.10 x64 multiarch
-  Ubuntu Gnome 16.10 x64 multiarch
-  Ubuntu Unity 17.04 x64 multiarch
-  Ubuntu Gnome 17.04 x64 multiarch
-  Ubuntu Gnome devel x64 multiarch
-  Linux Mint 17.3 x64
-  Xubuntu 16.04 x64
 ```
