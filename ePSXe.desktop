@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=./epsxe
+Name=ePSXe
+Comment=Created using ePSXe64Ubuntu script from https://github.com/brandleesee
+Icon=$hid/ePSXe.svg
+Categories=Game;Emulator;
