@@ -3,6 +3,6 @@ Type=Application
 Terminal=false
 Exec=./ePSXe
 Name=ePSXe
-Comment=Created using ePSXe64Ubuntu script from https://github.com/brandleesee
+Comment=Created using ePSXe64Ubuntu script from https://github.com/brandleesee/ePSXe64Ubuntu
 Icon=/home/$USER/.epsxe/ePSXe.svg
 Categories=Game;Emulator;
