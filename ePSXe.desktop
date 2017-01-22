@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Terminal=false
-Exec=./epsxe
+Exec=./ePSXe
 Name=ePSXe
 Comment=Created using ePSXe64Ubuntu script from https://github.com/brandleesee
 Icon=$hid/ePSXe.svg
