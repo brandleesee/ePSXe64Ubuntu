@@ -27,9 +27,9 @@ An interactive script that installs ePSXe 2.0.5 Linux x64 on Ubuntu x64 and its 
 ### Installation Procedure
 
 ```
-wget -O ePSXe6Ubuntu.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/ePSXe6Ubuntu.sh
+wget -O ePSXe64Ubuntu.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/ePSXe64Ubuntu.sh
 
-bash ePSXe6Ubuntu.sh
+bash ePSXe64Ubuntu.sh
 ```
 
 * Enter SUDO password.
