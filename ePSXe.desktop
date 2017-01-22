@@ -4,5 +4,5 @@ Terminal=false
 Exec=./ePSXe
 Name=ePSXe
 Comment=Created using ePSXe64Ubuntu script from https://github.com/brandleesee
-Icon=$hid/ePSXe.svg
+Icon=/home/$USER/.epsxe/ePSXe.svg
 Categories=Game;Emulator;
