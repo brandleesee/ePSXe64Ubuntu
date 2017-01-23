@@ -57,7 +57,7 @@ FILE "_____ ___ _______.bin" BINARY
 * The first line within the `  .cue  ` sheet must contain the **exact** name of the `  .bin  ` file inside double quotes including the `  .bin  ` extension.
 * Some games require elaborate `  .cue  ` sheets. A Google search should see you sorted.
 
-## ePSXe64Ubuntu
+## History
 
 ### v7.3
 
