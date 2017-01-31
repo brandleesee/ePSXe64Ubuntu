@@ -3,7 +3,7 @@
 
 **new README.md in the pipeline**
 
-in the meantime, to install:
+in the meantime, version **9** is out to install:
 
 ```bash
 wget -O ePSXe64Ubuntu.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/ePSXe64Ubuntu.sh
