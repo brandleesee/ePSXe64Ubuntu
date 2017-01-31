@@ -2,3 +2,11 @@
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 **new README.md in the pipeline**
+
+in the meantime, to install:
+
+```bash
+wget -O ePSXe64Ubuntu.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/ePSXe64Ubuntu.sh
+
+bash ePSXe64Ubuntu.sh
+```
