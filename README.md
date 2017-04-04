@@ -18,8 +18,7 @@
 - [x] lock-to-launcher instructions
 - [x] interactive Back Up function
 - [x] quiet script, removes clutter from screen
-- [ ] to consider removing intentional output except instructions and menus
-- [ ] to consider adding log file
+- [ ] to include support for gaming pads
 - [ ] to test & add more shaders
 - [ ] to differentiate between current `  2.0.0  ` and any future versions of `  epsxerc  `
 
