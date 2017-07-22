@@ -28,7 +28,9 @@
 
 <h2 align="center">installation procedure</h2>
 
-<h5>Open terminal  `Ctrl+Alt+T`</h5>
+<h5>Open terminal</h5>
+
+`Ctrl+Alt+T`
 
 ```bash
 wget -O ePSXe64Ubuntu.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/ePSXe64Ubuntu.sh
