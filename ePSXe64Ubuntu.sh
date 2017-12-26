@@ -61,8 +61,8 @@ tput setaf 11; echo "Setting up ePSXe"; tput sgr0
 	wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
 	unzip -qq "/tmp/$ins" -d "/tmp"
 	mv "/tmp/epsxe_x64" "/home/$USER/ePSXe"
-	sudo chmod +x ePSXe
-	./ePSXe
+	sudo chmod +x "/home/$USER/ePSXe"
+	"/home/$USER/ePSXe"
 tput setaf 11; echo "Download Icon"; tput sgr0
 	wget -q "$dls/ePSXe.svg" -P "$hid"
 tput setaf 11; echo "Transfer docs folder to .epsxe"; tput sgr0
