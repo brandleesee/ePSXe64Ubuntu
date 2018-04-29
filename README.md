@@ -130,20 +130,28 @@ sudo rm /usr/share/applications/ePSXe.desktop
 <table>
  <tbody>
   <tr>
-   <td align="center" colspan="2"><strong>9th release</strong></td>
+   <td align="center" colspan="2"><strong>9th release & updates</strong></td>
   </tr>
   <tr>
    <td align="left" colspan="2">
     <ul>
-     <li>Major revision.</li>
-     <li>Proper back up functionality.</li>
-     <li>Interactive SHADERS menu.</li>
-     <li>Prints terminal entries in color.</li>
-     <li>Installs required packages silently.</li>
-     <li>Moves and copies silently.</li>
-     <li>Makes effective use of system <code>/tmp</code>.</li>
-     <li>Added disclaimer.</li>
-     <li>Credit given.</li>
+     <li>9.1</li>
+      <ul>
+       <li>Corrected 1st line. Missing `/`.</li>
+      </ul>
+     <li>9</li>
+      <ul>
+       <li>Major revision.</li>
+       <li>Proper back up functionality.</li>
+       <li>Interactive SHADERS menu.</li>
+       <li>Prints terminal entries in color.</li>
+       <li>Installs required packages silently.</li>
+       <li>Moves and copies silently.</li>
+       <li>Makes effective use of system <code>/tmp</code>.</li>
+       <li>Added disclaimer.</li>
+       <li>Credit given.</li>
+     </ul>
+    </ul>
     <ul>
    </td>
   </tr>
