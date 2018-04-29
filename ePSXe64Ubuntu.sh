@@ -7,7 +7,7 @@
 # Brandon Lee Camilleri ( blc / brandleesee / Yrvyne ) can be reached on brandon.camilleri.90@gmail.com
 # ePSXe64Ubuntu repository can be found at https://github.com/brandleesee/ePSXe64Ubuntu
 
-ver="v9.1"
+ver="9.2"
 ins="ePSXe205linux_x64.zip"
 hid="/home/$USER/.epsxe"
 bkp="/home/$USER/ePSXe_backups/$(date "+%F-%T-%Z")"
@@ -17,13 +17,16 @@ dls="https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master"
 opt=("Download" "Restore from backup")
 PS3="Choose from 1 to 3 above. "
 
-tput setaf 11; echo "Welcome to ePSXe64Ubuntu.sh script, version $ver."; tput sgr0
-tput setaf 12; echo "This installs '$ins' on Ubuntu x64 and its derivatives."; tput sgr0
-tput setaf 9; echo "SUDO password required"; tput sgr0
-tput setaf 9; echo "WHEN ePSXe GUI appears on screen, you can:"; tput sgr0
-tput setaf 9; echo "     Right click on icon in Dash/Dock/Panel and Add to Favorities/Lock"; tput sgr0
-tput setaf 9; echo "     Icon placeholder in Dash/Dock/Panel may be invisible. Right-clicking still works."; tput sgr0
-tput setaf 9; echo "     Close ePSXe GUI to continue with the script."; tput sgr0
+tput setaf 2; echo "Welcome to ePSXe64Ubuntu.sh script, $ver."; tput sgr0
+tput setaf 1; echo "When ePSXe GUI appears on screen:"; tput sgr0
+tput setaf 1; echo "  Right click on icon in Dash/Dock/Panel"; tput sgr0
+tput setaf 1; echo "  Add to Favorities/Lock"; tput sgr0
+tput setaf 1; echo "  Icon placeholder may be invisible."; tput sgr0
+tput setaf 1; echo "  Right-clicking still works."; tput sgr0
+tput setaf 1; echo "  CLOSE ePSXe GUI to continue with the script."; tput sgr0
+tput setaf 2; echo "Script started."; tput sgr0
+
+# Installs required packages per OS
  	{
  	  declare os
 	  os="$(lsb_release -i | cut -f 2)"
@@ -33,16 +36,19 @@ tput setaf 9; echo "     Close ePSXe GUI to continue with the script."; tput sgr
 	    sudo apt-get -qq -y install libsdl-ttf2.0-0 ecm unzip
 	  fi
 	}
-tput setaf 11; echo "Backup .epsxe, if any"; tput sgr0
+
+# Back-up function
 	if [ -d "$hid" ]; then
 	  mkdir -p "$bkp"
 	  mv "$hid" "$bkp"
 	fi
-tput setaf 11; echo "Remove any duplicates of ePSXe executable"; tput sgr0
+
+# Removes duplicate of ePSXe executable
 	if [ -e "$exe" ]; then
 	  sudo rm -rf "$exe"
 	fi
-tput setaf 11; echo "ePSXe.desktop"; tput sgr0
+
+# Checks and creates icon data for Dash/Dock/Panel
 	if [ -e "$cor/ePSXe.desktop" ]; then
 	  sudo rm -rf "$cor/ePSXe.desktop"
 	fi
@@ -57,20 +63,25 @@ tput setaf 11; echo "ePSXe.desktop"; tput sgr0
 	  echo "Categories=Game;Emulator;"
 	} >> "/tmp/ePSXe.desktop"
 	sudo mv "/tmp/ePSXe.desktop" "$cor/ePSXe.desktop"
-tput setaf 11; echo "Setting up ePSXe"; tput sgr0
+
+# Sets up ePSXe
 	wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
 	unzip -qq "/tmp/$ins" -d "/tmp"
 	mv "/tmp/epsxe_x64" "/home/$USER/ePSXe"
 	sudo chmod +x ePSXe
 	./ePSXe
-tput setaf 11; echo "Download Icon"; tput sgr0
+
+# Downloads Icon
 	wget -q "$dls/ePSXe.svg" -P "$hid"
-tput setaf 11; echo "Transfer docs folder to .epsxe"; tput sgr0
+
+# Transfers docs folder to .epsxe
 	mv "/tmp/docs" "$hid"
-tput setaf 11; echo "Activate BIOS HLE"; tput sgr0
+
+# Activates BIOS HLE 
 	sed -i '11s/.*/BiosPath = /' "$hid/epsxerc"
 	sed -i '14s/.*/BiosHLE = 1/' "$hid/epsxerc"
-tput setaf 11; echo "Restore Backup"; tput sgr0
+
+# Restores Back-Up 
 	if [ -d "$bkp/.epsxe" ]; then
 	  cp -r "$bkp/.epsxe/bios/." "$hid/bios"
 	  cp -r "$bkp/.epsxe/cheats/." "$hid/cheats"
@@ -85,7 +96,9 @@ tput setaf 11; echo "Restore Backup"; tput sgr0
 	  cp -r "$bkp/.epsxe/plugins/." "$hid/plugins"
 	  cp -r "$bkp/.epsxe/sstates/." "$hid/sstates"
 	fi
-tput setaf 11; echo "Shaders"; tput sgr0
+
+# Function for Shaders
+tput setaf 2; echo "Shaders Menu"; tput sgr0
 	select opt in "${opt[@]}" "Do nothing"; do 
 	  case "$REPLY" in
 	    1 ) 
@@ -103,8 +116,9 @@ tput setaf 11; echo "Shaders"; tput sgr0
 	    *) echo "Invalid option. Choose from 1 to 3.";continue;;
 	  esac
 	done
-tput setaf 11; echo "Remove Clutter"; tput sgr0
+
+# Removes clutter
 	rm -rf "/tmp/$ins"
 	rm -rf "/tmp/shaders.zip"
-tput setaf 11; echo "Script Finished"; tput sgr0
-
+	
+tput setaf 2; echo "Script finished."; tput sgr0
