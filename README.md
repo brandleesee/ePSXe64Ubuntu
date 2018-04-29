@@ -18,6 +18,7 @@
 - [x] lock-to-launcher instructions
 - [x] interactive Back Up function
 - [x] quiet script, removes clutter from screen
+- [ ] to add automatic log function saving output in separate text file
 - [ ] to include support for gaming pads
 - [ ] to test & add more shaders
 - [ ] to differentiate between current `  2.0.0  ` and any future versions of `  epsxerc  `
@@ -135,6 +136,13 @@ sudo rm /usr/share/applications/ePSXe.desktop
   <tr>
    <td align="left" colspan="2">
     <ul>
+     <li>9.2</li>
+      <ul>
+       <li>Changed text colour output.</li>
+       <li>Wrote clearer GUI instructions.</li>
+       <li>Removed most titles as they were misleading and did not promulgate useful information.</li>
+       <li>Commented sections and skipped lines for easier reference.</li>
+      </ul>
      <li>9.1</li>
       <ul>
        <li>Corrected 1st line. Missing /.</li>
