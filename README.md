@@ -137,7 +137,7 @@ sudo rm /usr/share/applications/ePSXe.desktop
     <ul>
      <li>9.1</li>
       <ul>
-       <li>Corrected 1st line. Missing `/`.</li>
+       <li>Corrected 1st line. Missing /.</li>
       </ul>
      <li>9</li>
       <ul>
