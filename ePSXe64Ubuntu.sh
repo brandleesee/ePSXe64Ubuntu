@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # ePSXe emulator is property of ePSXe team, http://epsxe.com/, under Proprietary license.
 # ePSXe64Ubuntu.sh and formerly e64u.sh scripts are property of Brandon Lee Camilleri ( blc / brandleesee / Yrvyne ), https://twitter.com/brandleesee and https://www.reddit.com/user/Yrvyne/.
@@ -7,7 +7,7 @@
 # Brandon Lee Camilleri ( blc / brandleesee / Yrvyne ) can be reached on brandon.camilleri.90@gmail.com
 # ePSXe64Ubuntu repository can be found at https://github.com/brandleesee/ePSXe64Ubuntu
 
-ver="v9"
+ver="v9.1"
 ins="ePSXe205linux_x64.zip"
 hid="/home/$USER/.epsxe"
 bkp="/home/$USER/ePSXe_backups/$(date "+%F-%T-%Z")"
