@@ -18,7 +18,7 @@
 - [x] lock-to-launcher instructions
 - [x] interactive Back Up function
 - [x] quiet script, removes clutter from screen
-- [ ] to fix cloning from git, ref #2
+- [ ] to fix cloning from git, ref [#2](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2)
 - [ ] to test if script works after do-release-upgrade
 - [ ] to test if script works on clean install of Ubuntu 18.04
 - [ ] to add automatic log function saving output in separate text file
