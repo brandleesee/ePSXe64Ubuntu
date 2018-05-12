@@ -18,13 +18,13 @@
 - [x] lock-to-launcher instructions
 - [x] interactive Back Up function
 - [x] quiet script, removes clutter from screen
-- [ ] to fix cloning from git, ref [#2](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2)
-- [ ] to test if script works after do-release-upgrade
-- [ ] to test if script works on clean install of Ubuntu 18.04
+- [ ] to fix cloning from git, ref: [#2](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2)
+- [ ] to update README.md with cloning instructions
+- [ ] to place changelog in HISTORY.md and link it to README.md.
+- [ ] to test if script works after do-release-upgrade to Ubuntu 18.04
+- [ ] to test if script works on clean install of Ubuntu 18.04, ref: [libcurl4](http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/)
 - [ ] to add automatic log function saving output in separate text file
-- [ ] to include support for gaming pads
 - [ ] to test & add more shaders
-- [ ] to differentiate between current `  2.0.0  ` and any future versions of `  epsxerc  `
 
 <h2 align="center">typical installation</h2>
 
