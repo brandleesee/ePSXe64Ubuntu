@@ -35,11 +35,11 @@
 
 <h2 align="center">typical installation</h2>
 
-<img align="center" src="https://i.imgur.com/jJyFe8b.gifv" />
+<img align="center" src="https://i.imgur.com/jJyFe8b.gif" />
 
 <h2 align="center">installation procedure</h2>
 
-<p>In terminal.</p>
+<p align="center">in terminal</p>
 
 ```bash
 wget -O ePSXe64Ubuntu.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/ePSXe64Ubuntu.sh
@@ -47,45 +47,21 @@ wget -O ePSXe64Ubuntu.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ub
 bash ePSXe64Ubuntu.sh
 ```
 
-<table>
- <tbody>
-  <tr>
-   <td align="left" colspan="2"><p>Enter <strong>SUDO</strong> password.</p></td>
-  </tr>
-  <tr>
-   <td align="center" colspan="2"><img src="" /></td>
-  </tr>
-  <tr>
-   <td align="left" colspan="2"><p><strong>RIGHT CLICK</strong> on ePSXe blank space or icon in Dash / Dock / Panel to Add to Favorities / Lock.</p></td>
-  </tr>
-  <tr>
-   <td align="center">
-    <img src="" />
-    <br />
-    <ul align="left">
-     <li>on script's first run</li>
-     <li>ePSXe.desktop removed, pc rebooted</li>
-    </ul>
-   </td>
-   <td align="center">
-    <img src="" />
-    <br />
-    <ul align="left">
-     <li>on each subsequent install</li>
-     <li>ePSXe.desktop removed, pc <strong>not</strong> rebooted</li>
-    </ul>
-   </td>
-  </tr>
-  <tr>
-   <td align="left" width="50%"><p><strong>CLOSE</strong> ePSXe window to continue with script.</p></td>
-   <td align="center" width="50%"><img src="" /></td>
-  </tr>
-  <tr>
-   <td align="left"><p><strong>Download</strong>, <strong>Restore</strong> or <strong>Ignore</strong> bundled shaders.<br />Type number and press <strong>ENTER.</strong></p></td>
-   <td align="center"><img src="" /></td>
-  </tr>
- </tbody>
-</table>
+<img align="center" src="https://i.imgur.com/CD9XlIQ.png" />
+
+<p align="center">enter <strong>SUDO</strong> password</p>
+
+<p align="center"><strong>RIGHT CLICK</strong> on ePSXe blank space or icon in Dash / Dock / Panel to Add to Favorities / Lock</p>
+
+<p align="center"><strong>CLOSE</strong> ePSXe window to continue with script.</p>
+
+<img align="center" src="https://i.imgur.com/MZMI4rv.png" />
+
+<p align="center"><strong>download</strong>, <strong>restore</strong> or <strong>ignore</strong> bundled shaders
+
+<p align="center">type number and press <strong>ENTER</strong></p>
+
+<img align="center" src="https://i.imgur.com/tmswgZJ.png" />
 
 <h2 align="center">decompressing using ecm</h2>
 
