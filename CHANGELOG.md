@@ -33,7 +33,9 @@
   <tr>
    <td align="center"><img src="http://i.imgur.com/mCntR7j.png" /></td>
    <td align="center"><img src="http://i.imgur.com/rD6V5Ub.png" /></td>
-  </tr>
+  </tr> 
+  <tr>
+   <td align="center" colspan="2"><img src="http://i.imgur.com/fPycbXf.png" /></td>
   <tr>
    <td align="left" colspan="2">
     <ul>
