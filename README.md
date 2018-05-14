@@ -97,12 +97,12 @@ sudo rm /usr/share/applications/ePSXe.desktop
 
 <p align="center"><strong>DELETE</strong>:</p>
 
-    <ul>
-     <li>ePSXe</li>
-     <li>ePSXe64Ubuntu.sh</li>
-     <li>ePSXe_backups</li>
-     <li>.epsxe</li>
-    </ul>
+<ul align="center">
+ <li>ePSXe</li>
+ <li>ePSXe64Ubuntu.sh</li>
+ <li>ePSXe_backups</li>
+ <li>.epsxe</li>
+</ul>
     
 <img  align="center" src="https://i.imgur.com/FiBbK8w.png" />
 
