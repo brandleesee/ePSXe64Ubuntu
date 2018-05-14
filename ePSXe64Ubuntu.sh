@@ -27,15 +27,7 @@ tput setaf 1; echo "  CLOSE ePSXe GUI to continue with the script."; tput sgr0
 tput setaf 2; echo "Script started."; tput sgr0
 
 # Installs required packages per OS
- 	{
- 	  declare os
-	  os="$(lsb_release -i | cut -f 2)"
-	  if [[ "$os" == "Xubuntu" ]]; then
-	    sudo apt-get -qq -y install libcurl3 libsdl-ttf2.0-0 ecm unzip
-	  else
-	    sudo apt-get -qq -y install libsdl-ttf2.0-0 ecm unzip
-	  fi
-	}
+ 	sudo apt install -qq -y install libcurl3 libsdl-ttf2.0-0 ecm unzip
 
 # Back-up function
 	if [ -d "$hid" ]; then
