@@ -21,8 +21,6 @@ tput setaf 2; echo "Welcome to ePSXe64Ubuntu.sh script, $ver."; tput sgr0
 tput setaf 1; echo "When ePSXe GUI appears on screen:"; tput sgr0
 tput setaf 1; echo "  Right click on icon in Dash/Dock/Panel"; tput sgr0
 tput setaf 1; echo "  Add to Favorities/Lock"; tput sgr0
-tput setaf 1; echo "  Icon placeholder may be invisible."; tput sgr0
-tput setaf 1; echo "  Right-clicking still works."; tput sgr0
 tput setaf 1; echo "  CLOSE ePSXe GUI to continue with the script."; tput sgr0
 tput setaf 2; echo "Script started."; tput sgr0
 
@@ -104,7 +102,11 @@ tput setaf 2; echo "Shaders Menu"; tput sgr0
 	    ;;
 	    2 ) 
 	      cp -r "$bkp/.epsxe/shaders/." "$hid/shaders"
+	      if  [ -e "$hid/.epsxe/memcards/epsxe000.mcr" ]; then
 	      echo "This choice has reinstated the backed up shaders.";
+	      else
+	      echo "Back-Up folder not found."
+	      fi
 	      break
 	    ;;
 	    $(( ${#opt[@]}+1 )) ) echo "This choice has left the shaders folder empty."; break;;
