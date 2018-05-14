@@ -102,7 +102,7 @@ tput setaf 2; echo "Shaders Menu"; tput sgr0
 	    ;;
 	    2 ) 
 	      cp -r "$bkp/.epsxe/shaders/." "$hid/shaders"
-	      if  [ -e "$hid/.epsxe/shaders/." ]; then
+	      if  [ -e "$bkp/.epsxe/shaders/." ]; then
 	        echo "This choice has reinstated the backed up shaders.";
 	      else
 	        tput setaf 1; echo "Shaders back-up folder not found."; tput sgr0
