@@ -1,6 +1,6 @@
 <h1 align="center">ePSXe64Ubuntu</h1>
 
-<p align="center">Version 10 | [Changelog](https://github.com/brandleesee/ePSXe64Ubuntu/blob/master/CHANGELOG.md)</p>
+<p align="center">Version 10 | <a href="https://github.com/brandleesee/ePSXe64Ubuntu/blob/master/CHANGELOG.md">Changelog</a></p>
 
 <img align="center" src="" />
 
