@@ -2,7 +2,7 @@
 
 <p align="center">Version 10 | <a href="https://github.com/brandleesee/ePSXe64Ubuntu/blob/master/CHANGELOG.md">Changelog</a></p>
 
-<img align="center" src="https://i.imgur.com/2DlxMw4.png" />
+<img src="https://i.imgur.com/2DlxMw4.png" />
 
 <h2 align="center">overview</h2>
 
@@ -29,13 +29,13 @@
 
 <h2 align="center">dependency</h2>
 
-<img align="center" src="https://i.imgur.com/l1l3p6w.png" />
+<img src="https://i.imgur.com/l1l3p6w.png" />
 
 <p align="center">this new version installs libcurl3 by default</p>
 
 <h2 align="center">typical installation</h2>
 
-<img align="center" src="https://i.imgur.com/jJyFe8b.gif" />
+<img src="https://i.imgur.com/jJyFe8b.gif" />
 
 <h2 align="center">installation procedure</h2>
 
@@ -47,23 +47,23 @@ wget -O ePSXe64Ubuntu.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ub
 bash ePSXe64Ubuntu.sh
 ```
 
-<img align="center" src="https://i.imgur.com/CD9XlIQ.png" />
+<img src="https://i.imgur.com/CD9XlIQ.png" />
 
 <p align="center">enter <strong>SUDO</strong> password</p>
 
 <p align="center"><strong>RIGHT CLICK</strong> on ePSXe icon in Dash / Dock / Panel to Add to Favorities / Lock</p>
 
-<img align="center" src="https://i.imgur.com/8rOUO7A.png" />
+<p align="center"><img src="https://i.imgur.com/8rOUO7A.png" /></p>
 
 <p align="center"><strong>CLOSE</strong> ePSXe window to continue with script.</p>
 
-<img align="center" src="https://i.imgur.com/MZMI4rv.png" />
+<img src="https://i.imgur.com/MZMI4rv.png" />
 
 <p align="center"><strong>download</strong>, <strong>restore</strong> or <strong>ignore</strong> bundled shaders
 
 <p align="center">type number and press <strong>ENTER</strong></p>
 
-<img align="center" src="https://i.imgur.com/tmswgZJ.png" />
+<p align="center"><img src="https://i.imgur.com/tmswgZJ.png" /></p>
 
 <h2 align="center">decompressing using ecm</h2>
 
@@ -100,6 +100,6 @@ sudo rm /usr/share/applications/ePSXe.desktop
 
 <p align="center" ><strong>restart</strong> pc</p>
 
-<img align="center" src="https://i.imgur.com/FiBbK8w.png" />
+<img src="https://i.imgur.com/FiBbK8w.png" />
 
     
