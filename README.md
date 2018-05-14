@@ -18,10 +18,11 @@
 - [x] installs Dash / Dock / Panel application icon
 - [x] creates `  .desktop  ` by default for launcher integration
 - [x] lock-to-launcher instructions
-- [x] interactive Back Up function
+- [x] interactive Shaders back-iup function
 - [x] quiet script, removes clutter from screen
 - [x] script works after do-release-upgrade to Ubuntu 18.04 by re-installing as per instructions
 - [x] script works on clean install of Ubuntu 18.04, ref: [libcurl4](http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/)
+- [ ] to fix auto-back-up
 - [ ] to fix cloning from git, ref: [#2](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2)
 - [ ] to update README.md with cloning instructions
 - [ ] to add automatic log function saving output in separate text file
@@ -52,6 +53,8 @@ bash ePSXe64Ubuntu.sh
 <p align="center">enter <strong>SUDO</strong> password</p>
 
 <p align="center"><strong>RIGHT CLICK</strong> on ePSXe blank space or icon in Dash / Dock / Panel to Add to Favorities / Lock</p>
+
+<img align="center" src="https://i.imgur.com/jj6KBLu.png" />
 
 <p align="center"><strong>CLOSE</strong> ePSXe window to continue with script.</p>
 
