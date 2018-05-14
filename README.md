@@ -128,7 +128,7 @@ sudo rm /usr/share/applications/ePSXe.desktop
      <li>.epsxe</li>
     </ul>
    </td>
-   <td align="center" width="50%"><img src="http://i.imgur.com/fPycbXf.png" /></td>
+   <td align="center" width="50%"><img src="https://i.imgur.com/FiBbK8w.png" /></td>
   </tr>
   <tr>
    <td align="left" colspan="2"><p><strong>restart</strong> pc</p></td>
