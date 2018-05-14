@@ -40,6 +40,12 @@ tput setaf 2; echo "Script started."; tput sgr0
 	  sudo rm -rf "$exe"
 	fi
 
+# Re-Downloads Icon
+	if [ -e "$dls/ePSXe.svg" ]; then
+	  sudo rm -rf "$hid/ePSXe.svg"
+	  wget -q "$dls/ePSXe.svg" -P "$hid"
+	fi
+
 # Checks and creates icon data for Dash/Dock/Panel
 	if [ -e "$cor/ePSXe.desktop" ]; then
 	  sudo rm -rf "$cor/ePSXe.desktop"
@@ -55,16 +61,13 @@ tput setaf 2; echo "Script started."; tput sgr0
 	  echo "Categories=Game;Emulator;"
 	} >> "/tmp/ePSXe.desktop"
 	sudo mv "/tmp/ePSXe.desktop" "$cor/ePSXe.desktop"
-
+	
 # Sets up ePSXe
 	wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
 	unzip -qq "/tmp/$ins" -d "/tmp"
 	mv "/tmp/epsxe_x64" "/home/$USER/ePSXe"
 	sudo chmod +x ePSXe
 	./ePSXe
-
-# Downloads Icon
-	wget -q "$dls/ePSXe.svg" -P "$hid"
 
 # Transfers docs folder to .epsxe
 	mv "/tmp/docs" "$hid"
