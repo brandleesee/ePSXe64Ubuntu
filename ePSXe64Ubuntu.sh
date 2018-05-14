@@ -105,7 +105,7 @@ tput setaf 2; echo "Shaders Menu"; tput sgr0
 	      if  [ -e "$hid/.epsxe/memcards/epsxe000.mcr" ]; then
 	      echo "This choice has reinstated the backed up shaders.";
 	      else
-	      echo "Back-Up folder not found."
+	      tput setaf 1; echo "Back-Up folder not found."; tput sgr0
 	      fi
 	      break
 	    ;;
