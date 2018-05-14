@@ -52,9 +52,9 @@ bash ePSXe64Ubuntu.sh
 
 <p align="center">enter <strong>SUDO</strong> password</p>
 
-<p align="center"><strong>RIGHT CLICK</strong> on ePSXe blank space or icon in Dash / Dock / Panel to Add to Favorities / Lock</p>
+<p align="center"><strong>RIGHT CLICK</strong> on ePSXe icon in Dash / Dock / Panel to Add to Favorities / Lock</p>
 
-<img align="center" src="https://i.imgur.com/jj6KBLu.png" />
+<a align="center" href="https://imgur.com/jj6KBLu"><img src="https://i.imgur.com/jj6KBLu.png" title="source: imgur.com" /></a>>
 
 <p align="center"><strong>CLOSE</strong> ePSXe window to continue with script.</p>
 
