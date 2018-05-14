@@ -5,15 +5,21 @@
   <tr>
    <td align="center" colspan="2"><strong>10th release & updates</strong></td>
   </tr>
+    <ul>
+     <li>10</li>
+      <ul>
+       <li>Changed text colour output.</li>
+       <li>Wrote clearer GUI instructions.</li>
+       <li>Removed most titles as they were misleading and did not promulgate useful information.</li>
+       <li>Commented sections and skipped lines for easier reference.</li>
+      </ul>
+    </ul>
   <tr>
    <td align="center" colspan="2"><strong>9th release & updates</strong></td>
   </tr>
   <tr>
    <td align="center"><img src="http://i.imgur.com/U4QNkXL.png" /></td>
    <td align="center"><img src="http://i.imgur.com/cSqEyXC.gif" /></td>
-  </tr>
-  <tr>
-   <td align="center" width="50%"><img src="http://i.imgur.com/mCntR7j.png" /></td>
   </tr>
   <tr>
    <td align="center"><img src="http://i.imgur.com/A6cIRmT.png" /></td>
