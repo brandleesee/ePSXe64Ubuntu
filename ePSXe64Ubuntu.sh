@@ -7,7 +7,7 @@
 # Brandon Lee Camilleri ( blc / brandleesee / Yrvyne ) can be reached on brandon.camilleri.90@gmail.com
 # ePSXe64Ubuntu repository can be found at https://github.com/brandleesee/ePSXe64Ubuntu
 
-ver="9.2"
+ver="10"
 ins="ePSXe205linux_x64.zip"
 hid="/home/$USER/.epsxe"
 bkp="/home/$USER/ePSXe_backups/$(date "+%F-%T-%Z")"
@@ -27,7 +27,7 @@ tput setaf 1; echo "  CLOSE ePSXe GUI to continue with the script."; tput sgr0
 tput setaf 2; echo "Script started."; tput sgr0
 
 # Installs required packages per OS
- 	sudo apt install -qq -y libcurl3 libsdl-ttf2.0-0 ecm unzip
+ 	sudo apt -qqyy install libcurl3 libsdl-ttf2.0-0 ecm unzip
 
 # Back-up function
 	if [ -d "$hid" ]; then
