@@ -54,7 +54,7 @@ bash ePSXe64Ubuntu.sh
 
 <p align="center"><strong>RIGHT CLICK</strong> on ePSXe icon in Dash / Dock / Panel to Add to Favorities / Lock</p>
 
-<img align="center" src="https://i.imgur.com/jj6KBLu.png" />
+<img align="center" src="https://i.imgur.com/8rOUO7A.png" />
 
 <p align="center"><strong>CLOSE</strong> ePSXe window to continue with script.</p>
 
@@ -101,6 +101,6 @@ sudo rm /usr/share/applications/ePSXe.desktop
 
 <p align="center" ><strong>restart</strong> pc</p>
 
-<img align="center" src="https://i.imgur.com/8rOUO7A.png" />
+<img align="center" src="https://i.imgur.com/FiBbK8w.png" />
 
     
