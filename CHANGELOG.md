@@ -2,18 +2,20 @@
 
 <table>
  <tbody>
-  <tr>
-   <td align="center" colspan="2"><strong>10th release & updates</strong></td>
-  </tr>
+ <tr>
+   <td align="left" colspan="2">
     <ul>
      <li>10</li>
       <ul>
-       <li>Changed text colour output.</li>
-       <li>Wrote clearer GUI instructions.</li>
-       <li>Removed most titles as they were misleading and did not promulgate useful information.</li>
-       <li>Commented sections and skipped lines for easier reference.</li>
+       <li>Optimized for Ubuntu 18.04.</li>
+       <ul>
+        <li>Prior to 18.04 libcurl3 was installed only for Xubuntu / xfce.</li>
+        <li>http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/</li>
+       </ul>
       </ul>
     </ul>
+   </td>
+  </tr>
   <tr>
    <td align="center" colspan="2"><strong>9th release & updates</strong></td>
   </tr>
