@@ -54,7 +54,7 @@ bash ePSXe64Ubuntu.sh
 
 <p align="center"><strong>RIGHT CLICK</strong> on ePSXe icon in Dash / Dock / Panel to Add to Favorities / Lock</p>
 
-<a align="center" href="https://imgur.com/jj6KBLu"><img src="https://i.imgur.com/jj6KBLu.png" title="source: imgur.com" /></a>>
+<img align="center" src="https://i.imgur.com/jj6KBLu.png" />
 
 <p align="center"><strong>CLOSE</strong> ePSXe window to continue with script.</p>
 
@@ -93,24 +93,18 @@ FILE "_____ ___ _______.bin" BINARY
 sudo rm /usr/share/applications/ePSXe.desktop
 ```
 
-<table>
- <tbody>
-  <tr>
-   <td align="left" colspan="2"><p><strong>SUDO</strong> password required</p></td>
-  </tr>
-  <tr>
-   <td align="left" width="50%"><p><strong>DELETE</strong>:</p>
+<p align="center"><strong>SUDO</strong> password required</p>
+
+<p align="center"><strong>DELETE</strong>:</p>
+
     <ul>
      <li>ePSXe</li>
      <li>ePSXe64Ubuntu.sh</li>
      <li>ePSXe_backups</li>
      <li>.epsxe</li>
     </ul>
-   </td>
-   <td align="center" width="50%"><img src="https://i.imgur.com/FiBbK8w.png" /></td>
-  </tr>
-  <tr>
-   <td align="left" colspan="2"><p><strong>restart</strong> pc</p></td>
-  </tr>
- </tbody>
-</table>
+    
+<img  align="center" src="https://i.imgur.com/FiBbK8w.png" />
+
+<p align="center" ><strong>restart</strong> pc</p>
+    
