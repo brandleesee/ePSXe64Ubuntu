@@ -1,6 +1,8 @@
 <h1 align="center">ePSXe64Ubuntu</h1>
 
-<img align="center" src="http://i.imgur.com/U4QNkXL.png" />
+<p align="center">Version 10 | [Changelog](https://github.com/brandleesee/ePSXe64Ubuntu/blob/master/CHANGELOG.md)</p>
+
+<img align="center" src="" />
 
 <h2 align="center">overview</h2>
 
@@ -11,24 +13,29 @@
 - [x] uses built-in BIOS HLE
 - [x] uses built-in Core GPU & SPU plugins
 - [x] installs specific ePSXe dependency:  `  libsdl-ttf2.0-0  `
-- [x] installs required Xubuntu / xfce dependency:  `  libcurl3  `
+- [x] installs required dependency:  `  libcurl3  ` - prior 18.04, only required for Xubuntu / xfce.
 - [x] installs decompression tool:  `  ecm  `
 - [x] installs Dash / Dock / Panel application icon
 - [x] creates `  .desktop  ` by default for launcher integration
 - [x] lock-to-launcher instructions
 - [x] interactive Back Up function
 - [x] quiet script, removes clutter from screen
+- [x] script works after do-release-upgrade to Ubuntu 18.04 by re-installing as per instructions
+- [x] script works on clean install of Ubuntu 18.04, ref: [libcurl4](http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/)
 - [ ] to fix cloning from git, ref: [#2](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2)
 - [ ] to update README.md with cloning instructions
-- [ ] to place changelog in HISTORY.md and link it to README.md.
-- [ ] to test if script works after do-release-upgrade to Ubuntu 18.04
-- [ ] to test if script works on clean install of Ubuntu 18.04, ref: [libcurl4](http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/)
 - [ ] to add automatic log function saving output in separate text file
 - [ ] to test & add more shaders
 
+<h2 align="center">dependency</h2>
+
+<img align="center" src="https://i.imgur.com/l1l3p6w.png" />
+
+<p align="center">this new version installs libcurl3 by default</p>
+
 <h2 align="center">typical installation</h2>
 
-<img align="center" src="http://i.imgur.com/cSqEyXC.gif" />
+<img align="center" src="" />
 
 <h2 align="center">installation procedure</h2>
 
@@ -46,14 +53,14 @@ bash ePSXe64Ubuntu.sh
    <td align="left" colspan="2"><p>Enter <strong>SUDO</strong> password.</p></td>
   </tr>
   <tr>
-   <td align="center" colspan="2"><img src="http://i.imgur.com/H1Vs8JV.png" /></td>
+   <td align="center" colspan="2"><img src="" /></td>
   </tr>
   <tr>
    <td align="left" colspan="2"><p><strong>RIGHT CLICK</strong> on ePSXe blank space or icon in Dash / Dock / Panel to Add to Favorities / Lock.</p></td>
   </tr>
   <tr>
    <td align="center">
-    <img src="http://i.imgur.com/A6cIRmT.png" />
+    <img src="" />
     <br />
     <ul align="left">
      <li>on script's first run</li>
@@ -61,7 +68,7 @@ bash ePSXe64Ubuntu.sh
     </ul>
    </td>
    <td align="center">
-    <img src="http://i.imgur.com/PNlgKV1.png" />
+    <img src="" />
     <br />
     <ul align="left">
      <li>on each subsequent install</li>
@@ -71,11 +78,11 @@ bash ePSXe64Ubuntu.sh
   </tr>
   <tr>
    <td align="left" width="50%"><p><strong>CLOSE</strong> ePSXe window to continue with script.</p></td>
-   <td align="center" width="50%"><img src="http://i.imgur.com/mCntR7j.png" /></td>
+   <td align="center" width="50%"><img src="" /></td>
   </tr>
   <tr>
    <td align="left"><p><strong>Download</strong>, <strong>Restore</strong> or <strong>Ignore</strong> bundled shaders.<br />Type number and press <strong>ENTER.</strong></p></td>
-   <td align="center"><img src="http://i.imgur.com/rD6V5Ub.png" /></td>
+   <td align="center"><img src="" /></td>
   </tr>
  </tbody>
 </table>
