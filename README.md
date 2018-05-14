@@ -101,6 +101,6 @@ sudo rm /usr/share/applications/ePSXe.desktop
 
 <p align="center" ><strong>restart</strong> pc</p>
 
-<img align="center" src="https://i.imgur.com/FiBbK8w.png" />
+<img align="center" src="https://i.imgur.com/8rOUO7A.png" />
 
     
