@@ -87,9 +87,7 @@ tput setaf 2; echo "Script started."; tput sgr0
 	  cp -r "$bkp/.epsxe/memcards/." "$hid/memcards"
 	  cp -r "$bkp/.epsxe/patches/." "$hid/patches"
 	  cp -r "$bkp/.epsxe/plugins/." "$hid/plugins"
-	  cp -r "$bkp/.epsxe/sstates/." "$hid/sstates"
-	else
-	  tput setaf 1; echo "Back-Up folder not found."; tput sgr0	  
+	  cp -r "$bkp/.epsxe/sstates/." "$hid/sstates"  
 	fi
 
 # Function for Shaders
