@@ -88,6 +88,8 @@ tput setaf 2; echo "Script started."; tput sgr0
 	  cp -r "$bkp/.epsxe/patches/." "$hid/patches"
 	  cp -r "$bkp/.epsxe/plugins/." "$hid/plugins"
 	  cp -r "$bkp/.epsxe/sstates/." "$hid/sstates"
+	else
+	  tput setaf 1; echo "Back-Up folder not found."; tput sgr0	  
 	fi
 
 # Function for Shaders
@@ -102,10 +104,10 @@ tput setaf 2; echo "Shaders Menu"; tput sgr0
 	    ;;
 	    2 ) 
 	      cp -r "$bkp/.epsxe/shaders/." "$hid/shaders"
-	      if  [ -e "$hid/.epsxe/memcards/epsxe000.mcr" ]; then
-	      echo "This choice has reinstated the backed up shaders.";
+	      if  [ -e "$hid/.epsxe/shaders/." ]; then
+	        echo "This choice has reinstated the backed up shaders.";
 	      else
-	      tput setaf 1; echo "Back-Up folder not found."; tput sgr0
+	        tput setaf 1; echo "Shaders back-up folder not found."; tput sgr0
 	      fi
 	      break
 	    ;;
