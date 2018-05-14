@@ -13,7 +13,10 @@
        <li>Optimized for Ubuntu 18.04.</li>
        <ul>
         <li>Prior to 18.04 libcurl3 was installed only for Xubuntu / xfce.</li>
-        <li>http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/</li>
+        <ul>
+         <li>http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/</li>
+        </ul>
+        <li>Restructured script to first download icon then create the .desktop file.</li>
        </ul>
       </ul>
     </ul>
