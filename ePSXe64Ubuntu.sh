@@ -41,7 +41,7 @@ tput setaf 2; echo "Script started."; tput sgr0
 	fi
 
 # Re-Downloads Icon
-	if [ -e "$dls/ePSXe.svg" ]; then
+	if [ -e "$hid/ePSXe.svg" ]; then
 	  sudo rm -rf "$hid/ePSXe.svg"
 	  wget -q "$dls/ePSXe.svg" -P "$hid"
 	fi
