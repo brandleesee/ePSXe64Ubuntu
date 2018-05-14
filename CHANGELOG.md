@@ -3,7 +3,25 @@
 <table>
  <tbody>
   <tr>
+   <td align="center" colspan="2"><strong>10th release & updates</strong></td>
+  </tr>
+  <tr>
    <td align="center" colspan="2"><strong>9th release & updates</strong></td>
+  </tr>
+  <tr>
+   <td align="center"><img src="http://i.imgur.com/U4QNkXL.png" /></td>
+   <td align="center"><img src="http://i.imgur.com/cSqEyXC.gif" /></td>
+  </tr>
+  <tr>
+   <td align="center" width="50%"><img src="http://i.imgur.com/mCntR7j.png" /></td>
+  </tr>
+  <tr>
+   <td align="center"><img src="http://i.imgur.com/A6cIRmT.png" /></td>
+   <td align="center"><img src="http://i.imgur.com/PNlgKV1.png" /></td>
+  </tr>
+  <tr>
+   <td align="center"><img src="http://i.imgur.com/mCntR7j.png" /></td>
+   <td align="center"><img src="http://i.imgur.com/rD6V5Ub.png" /></td>
   </tr>
   <tr>
    <td align="left" colspan="2">
