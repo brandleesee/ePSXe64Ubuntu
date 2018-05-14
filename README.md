@@ -2,7 +2,7 @@
 
 <p align="center">Version 10 | <a href="https://github.com/brandleesee/ePSXe64Ubuntu/blob/master/CHANGELOG.md">Changelog</a></p>
 
-<img align="center" src="" />
+<img align="center" src="https://i.imgur.com/2DlxMw4.png" />
 
 <h2 align="center">overview</h2>
 
@@ -35,7 +35,7 @@
 
 <h2 align="center">typical installation</h2>
 
-<img align="center" src="" />
+<img align="center" src="https://i.imgur.com/jJyFe8b.gifv" />
 
 <h2 align="center">installation procedure</h2>
 
