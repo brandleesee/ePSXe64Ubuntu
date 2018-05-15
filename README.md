@@ -32,7 +32,7 @@
 <img src="https://i.imgur.com/l1l3p6w.png" />
 
 <p align="center">this new version installs libcurl3 by default</p>
-<p align="center"><strong>to note that this replaces libcurl4 and does software that use the latter do not work</strong></p>
+<p align="center"><strong>to note that this replaces libcurl4 and consequently packages that use the latter do not work, most notably KODI</strong></p>
 
 <h2 align="center">typical installation</h2>
 
