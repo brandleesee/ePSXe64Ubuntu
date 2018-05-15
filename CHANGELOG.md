@@ -17,7 +17,7 @@
          <li>Now installed by default.</li>
          <li>http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/</li>
         </ul>
-        <li>Restructured script to first download icon then create the .desktop file.</li>
+        <li>Restructured script to first download icon then create the .desktop file effectively removing any instances of a blank Dash/Dock/Panel placeholder on first install.</li>
        </ul>
       </ul>
     </ul>
