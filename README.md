@@ -21,7 +21,8 @@
 - [x] interactive Shaders back-iup function
 - [x] quiet script, removes clutter from screen
 - [x] script works after do-release-upgrade to Ubuntu 18.04 by re-installing as per instructions
-- [x] script works on clean install of Ubuntu 18.04, ref: [libcurl4](http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/)
+- [x] script works on clean install of Ubuntu 18.04
+- [ ] `  libcurl3 vs libcurl4  ` - ref: [libcurl4](http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/)
 - [ ] to fix cloning from git, ref: [#2](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2)
 - [ ] to update README.md with cloning instructions
 - [ ] to add automatic log function saving output in separate text file
