@@ -9,6 +9,7 @@
 
 ver="10"
 ins="ePSXe205linux_x64.zip"
+hme="/home/$USER"
 hid="/home/$USER/.epsxe"
 bkp="/home/$USER/ePSXe_backups/$(date "+%F-%T-%Z")"
 cor="/usr/share/applications"
@@ -41,7 +42,7 @@ tput setaf 2; echo "Script started."; tput sgr0
 # Re-Downloads Icon
 	if [ -e "$hid/ePSXe.svg" ]; then
 	  sudo rm -rf "$hid/ePSXe.svg"
-	  wget -q "$dls/ePSXe.svg" -P "$hid"
+	  wget -q "$hme/.ePSXe.svg" -P "$hid"
 	fi
 
 # Checks and creates icon data for Dash/Dock/Panel
@@ -55,7 +56,7 @@ tput setaf 2; echo "Script started."; tput sgr0
 	  echo "Exec=./ePSXe"
 	  echo "Name=ePSXe"
 	  echo "Comment=Created using ePSXe64Ubuntu from https://github.com/brandleesee"
-	  echo "Icon=$hid/ePSXe.svg"
+	  echo "Icon=$hme/.ePSXe.svg"
 	  echo "Categories=Game;Emulator;"
 	} >> "/tmp/ePSXe.desktop"
 	sudo mv "/tmp/ePSXe.desktop" "$cor/ePSXe.desktop"
