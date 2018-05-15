@@ -8,6 +8,11 @@
  <tr>
    <td align="left" colspan="2">
     <ul>
+     <li>10.1</li>
+      <ul>
+       <li>Renamed icon to become hidden by default.</li>
+       <li>Fixed removal of icon. Consequence of v10's restructuring.</li>
+      </ul>
      <li>10</li>
       <ul>
        <li>Optimized for Ubuntu 18.04.</li>
