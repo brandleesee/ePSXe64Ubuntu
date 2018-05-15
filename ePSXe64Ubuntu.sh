@@ -39,11 +39,8 @@ tput setaf 2; echo "Script started."; tput sgr0
 	  sudo rm -rf "$exe"
 	fi
 
-# Re-Downloads Icon
-	if [ -e "$hid/ePSXe.svg" ]; then
-	  sudo rm -rf "$hid/ePSXe.svg"
-	  wget -q "$hme/.ePSXe.svg" -P "$hid"
-	fi
+# Downloads Icon
+	wget -q "$dls/.ePSXe.svg" -P "$hme"
 
 # Checks and creates icon data for Dash/Dock/Panel
 	if [ -e "$cor/ePSXe.desktop" ]; then
@@ -103,11 +100,6 @@ tput setaf 2; echo "Shaders Menu"; tput sgr0
 	    ;;
 	    2 ) 
 	      cp -r "$bkp/.epsxe/shaders/." "$hid/shaders"
-	      if  [ -e "$bkp/.epsxe/shaders/." ]; then
-	        echo "This choice has reinstated the backed up shaders.";
-	      else
-	        tput setaf 1; echo "Shaders back-up folder not found."; tput sgr0
-	      fi
 	      break
 	    ;;
 	    $(( ${#opt[@]}+1 )) ) echo "This choice has left the shaders folder empty."; break;;
