@@ -8,6 +8,10 @@
  <tr>
    <td align="left" colspan="2">
     <ul>
+     <li>10.2</li>
+      <ul>
+       <li>Added Debian support by adding libssl1.0.0.</li>
+      </ul>
      <li>10.1</li>
       <ul>
        <li>Renamed icon to become hidden by default.</li>
