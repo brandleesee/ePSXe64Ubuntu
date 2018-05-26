@@ -1,3 +1,5 @@
+<h1 align="center">ePSXe64Ubuntu</h1>
+
 <h2 align="center">changelog</h2>
 
 <table>
