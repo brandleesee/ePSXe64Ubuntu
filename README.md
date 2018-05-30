@@ -1,7 +1,7 @@
 <h1 align="center">ePSXe64Ubuntu</h1>
 <p align="center"><strong>also supporting Debian</strong></p>
 
-<p align="center">Version 10.2 | <a href="https://github.com/brandleesee/ePSXe64Ubuntu/blob/master/CHANGELOG.md">Changelog</a> | <a href="https://chrismartinphotography.files.wordpress.com/2013/01/2012-landscapes-c2a9-christopher-martin-93441.jpg">Background</a> | <a href="http://xenlism.github.io/minimalism/">Minimalism GTK3 Theme</a> | <a href="https://github.com/xenlism/Storm">Storm Icon Set</a> | <a href="https://b00merang.weebly.com/windows-10.html">Windows 10 GTK Pack</a></p>
+<p align="center">Version 10.3 | <a href="https://github.com/brandleesee/ePSXe64Ubuntu/blob/master/CHANGELOG.md">Changelog</a> | <a href="https://chrismartinphotography.files.wordpress.com/2013/01/2012-landscapes-c2a9-christopher-martin-93441.jpg">Background</a> | <a href="http://xenlism.github.io/minimalism/">Minimalism GTK3 Theme</a> | <a href="https://github.com/xenlism/Storm">Storm Icon Set</a> | <a href="https://b00merang.weebly.com/windows-10.html">Windows 10 GTK Pack</a></p>
 
 <img src="https://i.imgur.com/2DlxMw4.png" />
 
@@ -23,7 +23,7 @@
 - [x] quiet script, removes clutter from screen
 - [x] script works after do-release-upgrade to Ubuntu 18.04 by re-installing as per instructions
 - [x] script works on clean install of Ubuntu 18.04
-- [ ] [to make script available to all users, cloning from git, full path for steam / big picture mode](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2#issuecomment-393070787)
+- [ ] [to make script available to all users, ~~cloning from git~~ [DONE], ~~full path for steam / big picture mode~~[DONE]](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2#issuecomment-393070787)
 - [ ] to add automatic log function saving output in separate text file
 - [ ] to test & add more shaders
 
