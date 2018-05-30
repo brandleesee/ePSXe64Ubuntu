@@ -23,9 +23,7 @@
 - [x] quiet script, removes clutter from screen
 - [x] script works after do-release-upgrade to Ubuntu 18.04 by re-installing as per instructions
 - [x] script works on clean install of Ubuntu 18.04
-- [ ] `  libcurl3 vs libcurl4  ` - ref: [libcurl4](http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/)
-- [ ] to fix cloning from git, ref: [#2](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2)
-- [ ] to update README.md with cloning instructions
+- [ ] [to make script available to all users, cloning from git, full path for steam / big picture mode](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2#issuecomment-393070787)
 - [ ] to add automatic log function saving output in separate text file
 - [ ] to test & add more shaders
 
@@ -35,6 +33,7 @@
 
 <p align="center">this new version installs libcurl3 by default</p>
 <p align="center"><strong>to note that this replaces libcurl4 and consequently packages that use the latter do not work, most notably KODI</strong></p>
+<p align="center"> reference: <a href="http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/">libcurl3 vs libcurl4</a></p>
 
 <h2 align="center">typical installation</h2>
 
