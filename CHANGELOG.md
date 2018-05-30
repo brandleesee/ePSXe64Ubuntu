@@ -10,6 +10,11 @@
  <tr>
    <td align="left" colspan="2">
     <ul>
+     <li>10.3</li>
+      <ul>
+       <li>Fixed script running from git cloned repo.</li>
+       <li>Fixed script running from Steam's Big Picture Mode.</li>
+      </ul>
      <li>10.2</li>
       <ul>
        <li>Added Debian support by adding libssl1.0.0.</li>
