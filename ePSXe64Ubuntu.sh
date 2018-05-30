@@ -7,7 +7,7 @@
 # Brandon Lee Camilleri ( blc / brandleesee / Yrvyne ) can be reached on brandon.camilleri.90@gmail.com
 # ePSXe64Ubuntu repository can be found at https://github.com/brandleesee/ePSXe64Ubuntu
 
-ver="10.2"
+ver="10.3"
 ins="ePSXe205linux_x64.zip"
 hme="/home/$USER"
 hid="/home/$USER/.epsxe"
@@ -50,7 +50,7 @@ tput setaf 2; echo "Script started."; tput sgr0
 	{
 	  echo "Type=Application"
 	  echo "Terminal=false"
-	  echo "Exec=./ePSXe"
+	  echo "Exec=/home/$USER/ePSXe"
 	  echo "Name=ePSXe"
 	  echo "Comment=Created using ePSXe64Ubuntu from https://github.com/brandleesee"
 	  echo "Icon=$hme/.ePSXe.svg"
@@ -62,8 +62,8 @@ tput setaf 2; echo "Script started."; tput sgr0
 	wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
 	unzip -qq "/tmp/$ins" -d "/tmp"
 	mv "/tmp/epsxe_x64" "/home/$USER/ePSXe"
-	sudo chmod +x ePSXe
-	./ePSXe
+	sudo chmod +x "/home/$USER/ePSXe"
+	"/home/$USER/ePSXe"
 
 # Transfers docs folder to .epsxe
 	mv "/tmp/docs" "$hid"
