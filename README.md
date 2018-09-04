@@ -23,7 +23,7 @@
 - [x] quiet script, removes clutter from screen
 - [x] script works after do-release-upgrade to Ubuntu 18.04 by re-installing as per instructions
 - [x] script works on clean install of Ubuntu 18.04
-- [ ] [to make script available to all users, DONE:~~cloning from git~~ & ~~full path for steam / big picture mode~~](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2#issuecomment-393070787)
+- [ ] [to make script available to all users, DONE: ~~cloning from git~~ & ~~full path for steam / big picture mode~~](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2#issuecomment-393070787)
 - [ ] to add automatic log function saving output in separate text file
 - [ ] to test & add more shaders
 
