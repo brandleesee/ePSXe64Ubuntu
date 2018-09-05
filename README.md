@@ -27,6 +27,8 @@
 - [ ] to add automatic log function saving output in separate text file
 - [ ] to test & add more shaders
 
+---
+
 <h2 align="center">dependency</h2>
 
 <img src="https://i.imgur.com/l1l3p6w.png" />
@@ -34,6 +36,10 @@
 <p align="center">this new version installs libcurl3 by default</p>
 <p align="center"><strong>to note that this replaces libcurl4 and consequently packages that use the latter do not work, most notably KODI</strong></p>
 <p align="center"> reference: <a href="http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/">libcurl3 vs libcurl4</a></p>
+<h3 align="center">potential workaround</h2>
+<p align="center"><a href="https://launchpad.net/~xapienz/+archive/ubuntu/curl34">Curl 3 and 4</a></p>
+
+---
 
 <h2 align="center">typical installation</h2>
 
