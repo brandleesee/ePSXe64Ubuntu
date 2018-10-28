@@ -25,7 +25,7 @@
 - [x] script works on clean install of Ubuntu 18.04
 - [ ] [to make script available to all users, DONE: ~~cloning from git~~ & ~~full path for steam / big picture mode~~](https://github.com/brandleesee/ePSXe64Ubuntu/pull/2#issuecomment-393070787)
 - [ ] to add automatic log function saving output in separate text file
-- [ ] to test & add more shaders
+- [ ] to test & add more shaders ([bundle to test](https://www.ngemu.com/threads/links-and-guides-to-custom-shaders-for-petes-opengl2-plugin.76098/page-51#post-2722008))
 
 ---
 
