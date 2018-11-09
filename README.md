@@ -19,7 +19,7 @@
 - [x] installs Dash / Dock / Panel application icon
 - [x] creates `  .desktop  ` by default for launcher integration
 - [x] lock-to-launcher instructions
-- [x] interactive Shaders back-iup function
+- [x] interactive Shaders back-up function
 - [x] quiet script, removes clutter from screen
 - [x] script works after do-release-upgrade to Ubuntu 18.04 by re-installing as per instructions
 - [x] script works on clean install of Ubuntu 18.04
