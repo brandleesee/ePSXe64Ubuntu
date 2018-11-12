@@ -13,11 +13,11 @@
 
 - [x] uses built-in BIOS HLE
 - [x] uses built-in Core GPU & SPU plugins
-- [x] installs specific ePSXe dependency:  `  libsdl-ttf2.0-0  `
-- [x] installs required dependency:  `  libcurl3  ` - prior 18.04, only required for Xubuntu / xfce.
-- [x] installs decompression tool:  `  ecm  `
+- [x] installs specific ePSXe dependency:  `libsdl-ttf2.0-0`
+- [x] installs required dependency:  `libcurl3` - prior 18.04, only required for Xubuntu / xfce.
+- [x] installs decompression tool:  `ecm`
 - [x] installs Dash / Dock / Panel application icon
-- [x] creates `  .desktop  ` by default for launcher integration
+- [x] creates `.desktop` by default for launcher integration
 - [x] lock-to-launcher instructions
 - [x] interactive Shaders back-up function
 - [x] quiet script, removes clutter from screen
