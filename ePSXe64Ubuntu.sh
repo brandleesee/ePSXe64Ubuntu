@@ -26,7 +26,18 @@ tput setaf 1; echo "  CLOSE ePSXe GUI to continue with the script."; tput sgr0
 tput setaf 2; echo "Script started."; tput sgr0
 
 # Installs required packages per OS
- 	sudo apt -qqq install libcurl3 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
+if (( $(echo $(. /etc/os-release ; echo $VERSION_ID) '< 18.04'|bc -l) ))
+then
+	sudo apt -y install libcurl3 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
+else
+	sudo apt -y install libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
+	wget http://archive.ubuntu.com/ubuntu/pool/main/c/curl3/libcurl3_7.58.0-2ubuntu2_amd64.deb -O /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
+	sudo mkdir /tmp/libcurl3
+	sudo dpkg-deb -x /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb /tmp/libcurl3
+	sudo cp -iv /tmp/libcurl3/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 /usr/lib/x86_64-linux-gnu/libcurl.so.3
+	sudo rm -rf /tmp/libcurl3
+	rm -rf /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
+fi
 
 # Back-up function
 	if [ -d "$hid" ]; then
@@ -61,8 +72,20 @@ tput setaf 2; echo "Script started."; tput sgr0
 # Sets up ePSXe
 	wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
 	unzip -qq "/tmp/$ins" -d "/tmp"
-	mv "/tmp/epsxe_x64" "/home/$USER/ePSXe"
-	sudo chmod +x "/home/$USER/ePSXe"
+	if (( $(echo $(. /etc/os-release ; echo $VERSION_ID) '< 18.04'|bc -l) ))
+	then
+	  mv "/tmp/epsxe_x64" "/home/$USER/ePSXe"
+	else
+	  xxd /tmp/epsxe_x64 /tmp/epsxe_x64.xxd
+	  rm -f /tmp/epsxe_x64
+	  echo "6434c
+00019210: 2e73 6f2e 3300 6375 726c 5f65 6173 795f  .so.3.curl_easy_
+.
+wq"|ed /tmp/epsxe_x64.xxd >/dev/null
+	  xxd -r /tmp/epsxe_x64.xxd "/home/$USER/ePSXe"
+	  rm -f /tmp/epsxe_x64.xxd
+	fi
+	chmod +x "/home/$USER/ePSXe"
 	"/home/$USER/ePSXe"
 
 # Transfers docs folder to .epsxe
