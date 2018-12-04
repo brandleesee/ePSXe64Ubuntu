@@ -99,6 +99,10 @@ FILE "_____ ___ _______.bin" BINARY
 ```bash
 sudo rm /usr/share/applications/ePSXe.desktop
 ```
+If you are running Ubuntu 18.04 or later:
+```bash
+sudo rm /usr/lib/x86_64-linux-gnu/libcurl.so.3
+```
 
 <p align="center"><strong>SUDO</strong> password required</p>
 
