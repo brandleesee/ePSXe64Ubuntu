@@ -30,7 +30,7 @@ if (( $(echo $(. /etc/os-release ; echo $VERSION_ID) '< 18.04'|bc -l) ))
 then
 	sudo apt -y install libcurl3 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
 else
-	sudo apt -y install libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
+	sudo apt -y install libncurses5 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
 	wget http://archive.ubuntu.com/ubuntu/pool/main/c/curl3/libcurl3_7.58.0-2ubuntu2_amd64.deb -O /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
 	sudo mkdir /tmp/libcurl3
 	sudo dpkg-deb -x /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb /tmp/libcurl3
