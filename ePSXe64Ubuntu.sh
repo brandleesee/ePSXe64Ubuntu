@@ -32,7 +32,7 @@ then
 	wget http://archive.ubuntu.com/ubuntu/pool/main/c/curl3/libcurl3_7.58.0-2ubuntu2_amd64.deb -O /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
 	sudo mkdir /tmp/libcurl3
 	sudo dpkg-deb -x /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb /tmp/libcurl3
-	sudo cp -iv /tmp/libcurl3/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 /usr/lib/x86_64-linux-gnu/libcurl.so.3
+	sudo cp -vn /tmp/libcurl3/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 /usr/lib/x86_64-linux-gnu/libcurl.so.3
 	sudo rm -rf /tmp/libcurl3
 	rm -rf /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
 else
@@ -75,12 +75,17 @@ fi
 	if [ "$(. /etc/os-release ; echo $ID)" == "ubuntu" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -c -2)" -ge 18 ]
 	then
 	  xxd /tmp/epsxe_x64 /tmp/epsxe_x64.xxd
-	  rm -f /tmp/epsxe_x64
 	  patch /tmp/epsxe_x64.xxd <(echo "6434c
 00019210: 2e73 6f2e 3300 6375 726c 5f65 6173 795f  .so.3.curl_easy_
 .")
 	  xxd -r /tmp/epsxe_x64.xxd "/home/$USER/ePSXe"
 	  rm -f /tmp/epsxe_x64.xxd
+	  if ! sha256sum -c --quiet <(echo "45fb1ee4cb21a5591de64e1a666e4c3cacb30fcc308f0324dc5b2b57767e18ee  /home/$USER/ePSXe")
+	  then
+	    tput setaf 1; echo "WARNING: patched /home/$USER/ePSXe did not match checksum, using original executable instead"; tput sgr0
+	    cp -f /tmp/epsxe_x64 "/home/$USER/ePSXe"
+	  fi
+	  rm -f /tmp/epsxe_x64
 	else
 	  mv "/tmp/epsxe_x64" "/home/$USER/ePSXe"
 	fi
