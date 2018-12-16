@@ -4,7 +4,28 @@
 
 <table>
  <tbody>
- <tr>
+  <tr>
+   <td align="center" colspan="2"><strong>11th release</strong></td>
+  </tr>
+  <tr>
+   <td align="left" colspan="2">
+    <ul>
+     <li>11</li>
+      <ul>
+       <li>removed quiet mode so as to have visible any errors while installing dependencies</li>
+       <li>fixes the problem where recent versions of ubuntu can't have libcurl3 installed at the same time as libcurl4 or in the case of 18.10, it's not available at all. It does this by downloading the 18.04 version of libcurl3 and installing it with the name libcurl.so.3 instead of libcurl.so.4. It then patches the ePSXe executable to look for libcurl.so.3 instead of libcurl.so.4.</li>
+       <li>Libcurl 3 is installed alongside libcurl4 so things like kodi should work regardless of whether the checksum matches or not.</li>
+       <li><a href="https://github.com/brandleesee/ePSXe64Ubuntu/pull/5">accepted pull request (bryceml)</a></li>
+       <li><a href="http://ngemu.com/threads/ubuntu-bionic-libcurl-so-4-curl_openssl_3-not-found.204577/">issue</a></li>
+       <li><a href="https://launchpad.net/~xapienz/+archive/ubuntu/curl34">previous workaround</a></li>
+      </ul>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td align="center" colspan="2"><img src="https://i.imgur.com/l1l3p6w.png" /></td>
+  </tr>
+  <tr>
   <td align="center" colspan="2"><strong>10th release & updates</strong></td>
  </tr>
  <tr>
