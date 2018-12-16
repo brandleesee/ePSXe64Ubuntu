@@ -34,9 +34,7 @@
 <p align="center">in terminal</p>
 
 ```bash
-wget -O ePSXe64Ubuntu.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/ePSXe64Ubuntu.sh
-
-bash ePSXe64Ubuntu.sh
+wget -O ePSXe64Ubuntu.sh https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master/ePSXe64Ubuntu.sh && bash ePSXe64Ubuntu.sh
 ```
 
 <img src="https://i.imgur.com/CD9XlIQ.png" />
