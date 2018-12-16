@@ -12,6 +12,7 @@
     <ul>
      <li>11</li>
       <ul>
+       <li>easier install (one-liner in terminal kicks up the script)</li>
        <li>removed quiet mode so as to have visible any errors while installing dependencies</li>
        <li>fixes the problem where recent versions of ubuntu can't have libcurl3 installed at the same time as libcurl4 or in the case of 18.10, it's not available at all. It does this by downloading the 18.04 version of libcurl3 and installing it with the name libcurl.so.3 instead of libcurl.so.4. It then patches the ePSXe executable to look for libcurl.so.3 instead of libcurl.so.4.</li>
        <li>Libcurl 3 is installed alongside libcurl4 so things like kodi should work regardless of whether the checksum matches or not.</li>
