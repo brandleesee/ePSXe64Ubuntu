@@ -22,7 +22,7 @@
 - [x] script works on clean install of Ubuntu 18.04 LTS
 - [x] `libcurl 3` & `libcurl 4` now co-exist enabling software like Kodi etc to work simultaneously with ePSXe
 - [ ] make script available to all users
-- [ ] add automatic log function saving output in separate text file
+- [ ] add automatic log function saving output to separate text file
 - [ ] test & add more shaders ([bundle to test](https://www.ngemu.com/threads/links-and-guides-to-custom-shaders-for-petes-opengl2-plugin.76098/page-51#post-2722008))
 
 <h2 align="center">typical installation</h2>
