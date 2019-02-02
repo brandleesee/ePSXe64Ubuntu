@@ -5,10 +5,37 @@
 <table>
  <tbody>
   <tr>
-   <td align="center" colspan="2"><strong>11th release</strong></td>
+   <td align="center" colspan="2"><strong>11th release & updates</strong></td>
   </tr>
   <tr>
    <td align="left" colspan="2">
+    <ul>
+     <li>11.1</li>
+      <ul>
+       <li>Linux Mint: apt-get Legacy Utility Command</li>
+       <ul>
+        <li>Linux Mint still uses apt-get out-of-the-box instead of Apt.</li>
+        <li><a href="https://github.com/cromat/ePSXe64Ubuntu/commit/9deb4bc17ea5e53d30c6023faca060ac612be6e4">issue</a></li>
+       </ul>
+       <li>Libcurl 3 - 4 issue on Linux Mint 19</li>
+       <ul>
+        <li><a href="https://forums.linuxmint.com/viewtopic.php?t=274477">reference</a></li>
+       </ul>
+       <li>References</li>
+       <ul>
+        <li><a href="https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php">https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php</a>to make sure *elif* statement is used correctly</li>
+        <li><a href="https://forums.linuxmint.com/viewtopic.php?t=263277">https://forums.linuxmint.com/viewtopic.php?t=263277</a> - checked where packages are downloaded from - resulted to be from ubuntu</li>
+        <li><a href="https://www.rootusers.com/check-which-linux-mint-version/">https://www.rootusers.com/check-which-linux-mint-version/</a> - checked whether Linux Mint releases have two decimal places like ubuntu 18.*04* - resulted negative
+thus, had to change *cut -c -2* to *cut -c -1* in line 38</li>
+        <li><a href="https://www.tldp.org/LDP/abs/html/comparison-ops.html">https://www.tldp.org/LDP/abs/html/comparison-ops.html</a></li>
+        <li><a href="https://stackoverflow.com/a/4277753">https://stackoverflow.com/a/4277753</a></li>
+        <li><a href="https://stackoverflow.com/questions/2237080/how-to-compare-strings-in-bash">https://stackoverflow.com/questions/2237080/how-to-compare-strings-in-bash</a></li>
+       </ul>
+      </ul>
+    </ul>
+  <tr>
+   <td align="center" colspan="2"><img src="https://user-images.githubusercontent.com/12674437/52143698-6bdcf400-265c-11e9-99dd-79090db2bb39.png" /></td>
+  </tr>
     <ul>
      <li>11</li>
       <ul>
