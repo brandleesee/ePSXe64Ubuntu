@@ -7,7 +7,7 @@
 # Brandon Lee Camilleri ( blc / brandleesee / Yrvyne ) can be reached on brandon.camilleri.90@gmail.com
 # ePSXe64Ubuntu repository can be found at https://github.com/brandleesee/ePSXe64Ubuntu
 
-ver="11"
+ver="11.1"
 ins="ePSXe205linux_x64.zip"
 hme="/home/$USER"
 hid="/home/$USER/.epsxe"
@@ -35,8 +35,17 @@ then
 	sudo cp -vn /tmp/libcurl3/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 /usr/lib/x86_64-linux-gnu/libcurl.so.3
 	sudo rm -rf /tmp/libcurl3
 	rm -rf /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
+elif [ "$(. /etc/os-release ; echo $ID)" == "linuxmint" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -c -1)" -ge 19 ]
+then
+	sudo apt-get -y install libncurses5 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
+	wget http://archive.ubuntu.com/ubuntu/pool/main/c/curl3/libcurl3_7.58.0-2ubuntu2_amd64.deb -O /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
+	sudo mkdir /tmp/libcurl3
+	sudo dpkg-deb -x /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb /tmp/libcurl3
+	sudo cp -vn /tmp/libcurl3/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 /usr/lib/x86_64-linux-gnu/libcurl.so.3
+	sudo rm -rf /tmp/libcurl3
+	rm -rf /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
 else
-	sudo apt -y install libcurl3 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
+	sudo apt-get -y install libcurl3 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
 fi
 
 # Back-up function
@@ -73,6 +82,20 @@ fi
 	wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
 	unzip -qq "/tmp/$ins" -d "/tmp"
 	if [ "$(. /etc/os-release ; echo $ID)" == "ubuntu" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -c -2)" -ge 18 ]
+	then
+	  xxd /tmp/epsxe_x64 /tmp/epsxe_x64.xxd
+	  patch /tmp/epsxe_x64.xxd <(echo "6434c
+00019210: 2e73 6f2e 3300 6375 726c 5f65 6173 795f  .so.3.curl_easy_
+.")
+	  xxd -r /tmp/epsxe_x64.xxd "/home/$USER/ePSXe"
+	  rm -f /tmp/epsxe_x64.xxd
+	  if ! sha256sum -c --quiet <(echo "45fb1ee4cb21a5591de64e1a666e4c3cacb30fcc308f0324dc5b2b57767e18ee  /home/$USER/ePSXe")
+	  then
+	    tput setaf 1; echo "WARNING: patched /home/$USER/ePSXe did not match checksum, using original executable instead"; tput sgr0
+	    cp -f /tmp/epsxe_x64 "/home/$USER/ePSXe"
+	  fi
+	  rm -f /tmp/epsxe_x64
+	elif [ "$(. /etc/os-release ; echo $ID)" == "linuxmint" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -c -1)" -ge 19 ]
 	then
 	  xxd /tmp/epsxe_x64 /tmp/epsxe_x64.xxd
 	  patch /tmp/epsxe_x64.xxd <(echo "6434c
