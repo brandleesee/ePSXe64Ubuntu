@@ -33,6 +33,8 @@ thus, had to change *cut -c -2* to *cut -c -1* in line 38</li>
        </ul>
       </ul>
     </ul>
+   </ul>
+  </tr>
   <tr>
    <td align="center" colspan="2"><img src="https://user-images.githubusercontent.com/12674437/52143698-6bdcf400-265c-11e9-99dd-79090db2bb39.png" /></td>
   </tr>
