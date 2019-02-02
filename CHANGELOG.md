@@ -1,5 +1,13 @@
 <h1 align="center">ePSXe64Ubuntu</h1>
 
+<table>
+<tbody>
+  <tr>
+   <td><img src="https://camo.githubusercontent.com/66f9d39d7a5274a0c8e7e0e5ff353eba364160c2/687474703a2f2f692e696d6775722e636f6d2f5534514e6b584c2e706e67" /></td>
+  </tr>
+</tbody>
+</table>
+
 <h2 align="center">changelog</h2>
 
 <h3 align="center">11</h3>
@@ -24,14 +32,6 @@
   - https://www.tldp.org/LDP/abs/html/comparison-ops.html
   - https://stackoverflow.com/a/4277753
   - https://stackoverflow.com/questions/2237080/how-to-compare-strings-in-bash
-
-<table>
-<tbody>
-  <tr>
-   <td><img src="https://i.imgur.com/l1l3p6w.png" /></td>
-  </tr>
-</tbody>
-</table>
   
 - 11
   - easier install (one-liner in terminal kicks up the script)
@@ -67,19 +67,7 @@
 <table>
 <tbody>
   <tr>
-   <td align="center"><img src="http://i.imgur.com/U4QNkXL.png" /></td>
    <td align="center"><img src="http://i.imgur.com/cSqEyXC.gif" /></td>
-  </tr>
-  <tr>
-   <td align="center"><img src="http://i.imgur.com/A6cIRmT.png" /></td>
-   <td align="center"><img src="http://i.imgur.com/PNlgKV1.png" /></td>
-  </tr>
-  <tr>
-   <td align="center"><img src="http://i.imgur.com/mCntR7j.png" /></td>
-   <td align="center"><img src="http://i.imgur.com/fPycbXf.png" /></td>
-  </tr> 
-  <tr>
-   <td align="left"><img src="http://i.imgur.com/rD6V5Ub.png" /></td>
   </tr>
 </tbody>
 </table>
