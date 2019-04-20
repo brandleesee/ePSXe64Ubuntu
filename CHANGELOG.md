@@ -34,7 +34,7 @@
   
   - https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php - to make sure *elif* statement is used correctly
   - https://forums.linuxmint.com/viewtopic.php?t=263277 - checked where packages are downloaded from - resulted to be from ubuntu
-  - https://www.rootusers.com/check-which-linux-mint-version/ - checked whether Linux Mint releases have two decimal places like ubuntu 18.**04** - resulted negative thus, had to change `cut -c -2` to `cut -c -1` in line 38
+  - https://www.rootusers.com/check-which-linux-mint-version/
   - https://www.tldp.org/LDP/abs/html/comparison-ops.html
   - https://stackoverflow.com/a/4277753
   - https://stackoverflow.com/questions/2237080/how-to-compare-strings-in-bash
