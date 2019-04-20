@@ -20,6 +20,9 @@
 </tbody>
 </table>
 
+- 11.3
+  - Added support for Debian Sid testing branch, Debian 9 and Debian 10 and KDE neon. This because libcurl 4 was replacing libcurl 3 on updating - https://github.com/brandleesee/ePSXe64Ubuntu/issues/7.
+
 - 11.2
   - Consolidated code blocks as per this comment: https://github.com/brandleesee/ePSXe64Ubuntu/commit/68a031d9800b308ebdc9f55046dc7f2286267e7c#commitcomment-32485422
 
