@@ -26,9 +26,14 @@ tput setaf 1; echo "  CLOSE ePSXe GUI to continue with the script."; tput sgr0
 tput setaf 2; echo "Script started."; tput sgr0
 
 # Installs required packages per OS
-if [ "$(. /etc/os-release ; echo $ID)" == "ubuntu" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -c -2)" -ge 18 ] || [ "$(. /etc/os-release ; echo $ID)" == "linuxmint" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -c -1)" -ge 19 ]
+if [ "$(. /etc/os-release ; echo $ID)" == "ubuntu" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 18 ] || \
+	[ "$(. /etc/os-release ; echo $ID)" == "linuxmint" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 19 ] || \
+	[ "$(. /etc/os-release ; echo $ID)" == "neon" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 18 ] || \
+	[ "$(. /etc/os-release ; echo $ID)" == "debian" ] && echo "$(. /etc/os-release ; echo $PRETTY_NAME)"|grep -qi sid || \
+	[ "$(. /etc/os-release ; echo $ID)" == "debian" ] && echo "$(. /etc/os-release ; echo $PRETTY_NAME)"|grep -qi sid || \
+	[ "$(. /etc/os-release ; echo $ID)" == "debian" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 10 ]
 then
-	sudo apt -y install libncurses5 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
+	sudo apt-get -y install libncurses5 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
 	wget http://archive.ubuntu.com/ubuntu/pool/main/c/curl3/libcurl3_7.58.0-2ubuntu2_amd64.deb -O /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
 	sudo mkdir /tmp/libcurl3
 	sudo dpkg-deb -x /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb /tmp/libcurl3
@@ -72,7 +77,12 @@ fi
 # Sets up ePSXe
 	wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
 	unzip -qq "/tmp/$ins" -d "/tmp"
-	if [ "$(. /etc/os-release ; echo $ID)" == "ubuntu" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -c -2)" -ge 18 ] || [ "$(. /etc/os-release ; echo $ID)" == "linuxmint" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -c -1)" -ge 19 ]
+	if [ "$(. /etc/os-release ; echo $ID)" == "ubuntu" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 18 ] || \
+	  [ "$(. /etc/os-release ; echo $ID)" == "linuxmint" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 19 ] || \
+	  [ "$(. /etc/os-release ; echo $ID)" == "neon" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 18 ] || \
+	  [ "$(. /etc/os-release ; echo $ID)" == "debian" ] && echo "$(. /etc/os-release ; echo $PRETTY_NAME)"|grep -qi sid || \
+	  [ "$(. /etc/os-release ; echo $ID)" == "debian" ] && echo "$(. /etc/os-release ; echo $PRETTY_NAME)"|grep -qi buster || \
+	  [ "$(. /etc/os-release ; echo $ID)" == "debian" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 10 ]
 	then
 	  xxd /tmp/epsxe_x64 /tmp/epsxe_x64.xxd
 	  patch /tmp/epsxe_x64.xxd <(echo "6434c
