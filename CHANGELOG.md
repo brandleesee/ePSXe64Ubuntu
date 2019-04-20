@@ -20,6 +20,9 @@
 </tbody>
 </table>
 
+- 11.2
+  - Consolidated code blockes as per (https://github.com/brandleesee/ePSXe64Ubuntu/commit/68a031d9800b308ebdc9f55046dc7f2286267e7c#commitcomment-32485422)
+
 - 11.1
   - Linux Mint: apt-get Legacy Utility Command
     - Linux Mint still uses apt-get out-of-the-box instead of Apt.
