@@ -26,12 +26,7 @@ tput setaf 1; echo "  CLOSE ePSXe GUI to continue with the script."; tput sgr0
 tput setaf 2; echo "Script started."; tput sgr0
 
 # Installs required packages per OS
-if [ "$(. /etc/os-release ; echo $ID)" == "ubuntu" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 18 ] || \
-	[ "$(. /etc/os-release ; echo $ID)" == "linuxmint" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 19 ] || \
-	[ "$(. /etc/os-release ; echo $ID)" == "neon" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 18 ] || \
-	[ "$(. /etc/os-release ; echo $ID)" == "debian" ] && echo "$(. /etc/os-release ; echo $PRETTY_NAME)"|grep -qi sid || \
-	[ "$(. /etc/os-release ; echo $ID)" == "debian" ] && echo "$(. /etc/os-release ; echo $PRETTY_NAME)"|grep -qi buster || \
-	[ "$(. /etc/os-release ; echo $ID)" == "debian" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 10 ]
+if apt-cache show libcurl4 2>/dev/null|grep -q '^Package: libcurl4$'
 then
 	sudo apt-get -y install libncurses5 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
 	wget http://archive.ubuntu.com/ubuntu/pool/main/c/curl3/libcurl3_7.58.0-2ubuntu2_amd64.deb -O /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
@@ -77,12 +72,7 @@ fi
 # Sets up ePSXe
 	wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
 	unzip -qq "/tmp/$ins" -d "/tmp"
-	if [ "$(. /etc/os-release ; echo $ID)" == "ubuntu" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 18 ] || \
-	  [ "$(. /etc/os-release ; echo $ID)" == "linuxmint" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 19 ] || \
-	  [ "$(. /etc/os-release ; echo $ID)" == "neon" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 18 ] || \
-	  [ "$(. /etc/os-release ; echo $ID)" == "debian" ] && echo "$(. /etc/os-release ; echo $PRETTY_NAME)"|grep -qi sid || \
-	  [ "$(. /etc/os-release ; echo $ID)" == "debian" ] && echo "$(. /etc/os-release ; echo $PRETTY_NAME)"|grep -qi buster || \
-	  [ "$(. /etc/os-release ; echo $ID)" == "debian" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 10 ]
+	if apt-cache show libcurl4 2>/dev/null|grep -q '^Package: libcurl4$'
 	then
 	  xxd /tmp/epsxe_x64 /tmp/epsxe_x64.xxd
 	  patch /tmp/epsxe_x64.xxd <(echo "6434c
