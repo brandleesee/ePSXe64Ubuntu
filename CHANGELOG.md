@@ -20,6 +20,9 @@
 </tbody>
 </table>
 
+- 11.4
+  - Simplify libcurl4 conflict detection by adding generic code that looks for the package instead of adding specific lines per affected distribution - https://pkgs.org/download/libcurl4
+
 - 11.3
   - Added support for Debian Sid testing branch, Debian 9 and Debian 10 and KDE neon. This because libcurl 4 was replacing libcurl 3 on updating - https://github.com/brandleesee/ePSXe64Ubuntu/issues/7.
 
