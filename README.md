@@ -10,17 +10,17 @@
 
 <h2 align="center">features</h2>
 
+**NOTICE: We are updating script in way of those distributions that are still removing libcurl 3 in favour of libcurl 4. Thus, should your distro of choice still replace libcurl 3, please, notify us at this issue thread: https://github.com/brandleesee/ePSXe64Ubuntu/issues/7. Thank you.**
+
 - [x] uses built-in BIOS HLE
 - [x] uses built-in Core GPU & SPU plugins
-- [x] installs specific ePSXe dependency:  `libsdl-ttf2.0-0`
-- [x] installs decompression tool:  `ecm`
+- [x] installs specific ePSXe dependency: `libsdl-ttf2.0-0`
+- [x] installs decompression tool: `ecm`
 - [x] installs Dash / Dock / Panel application icon
 - [x] creates `.desktop` by default for launcher integration
 - [x] lock-to-launcher instructions
 - [x] interactive Shaders back-up function
-- [x] `libcurl 3` & `libcurl 4` now co-exist enabling software like Kodi etc to work simultaneously with ePSXe
-- [ ] make script available to all users
-- [ ] add automatic log function saving output to separate text file
+- [x] `libcurl 3` & `libcurl 4` now co-exist for most distros enabling software like Kodi etc to work simultaneously with ePSXe
 - [ ] test & add more shaders ([bundle to test](https://www.ngemu.com/threads/links-and-guides-to-custom-shaders-for-petes-opengl2-plugin.76098/page-51#post-2722008))
 
 <h2 align="center">typical installation</h2>
