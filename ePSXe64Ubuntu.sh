@@ -30,7 +30,7 @@ if [ "$(. /etc/os-release ; echo $ID)" == "ubuntu" ] && [ "$(echo $(. /etc/os-re
 	[ "$(. /etc/os-release ; echo $ID)" == "linuxmint" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 19 ] || \
 	[ "$(. /etc/os-release ; echo $ID)" == "neon" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 18 ] || \
 	[ "$(. /etc/os-release ; echo $ID)" == "debian" ] && echo "$(. /etc/os-release ; echo $PRETTY_NAME)"|grep -qi sid || \
-	[ "$(. /etc/os-release ; echo $ID)" == "debian" ] && echo "$(. /etc/os-release ; echo $PRETTY_NAME)"|grep -qi sid || \
+	[ "$(. /etc/os-release ; echo $ID)" == "debian" ] && echo "$(. /etc/os-release ; echo $PRETTY_NAME)"|grep -qi buster || \
 	[ "$(. /etc/os-release ; echo $ID)" == "debian" ] && [ "$(echo $(. /etc/os-release ; echo $VERSION_ID)|cut -d. -f1)" -ge 10 ]
 then
 	sudo apt-get -y install libncurses5 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
