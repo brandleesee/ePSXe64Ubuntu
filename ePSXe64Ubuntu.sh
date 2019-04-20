@@ -7,7 +7,7 @@
 # Brandon Lee Camilleri ( blc / brandleesee / Yrvyne ) can be reached on brandon.camilleri.90@gmail.com
 # ePSXe64Ubuntu repository can be found at https://github.com/brandleesee/ePSXe64Ubuntu
 
-ver="11.1"
+ver="11.2"
 ins="ePSXe205linux_x64.zip"
 hme="/home/$USER"
 hid="/home/$USER/.epsxe"
