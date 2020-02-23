@@ -26,7 +26,10 @@ tput setaf 1; echo "  CLOSE ePSXe GUI to continue with the script."; tput sgr0
 tput setaf 2; echo "Script started."; tput sgr0
 
 sudo apt-get update
-sudo apt-get -y install wget
+sudo apt-get -y install wget sed
+# xxd was provided by vim-common on older distros
+sudo apt-get -y install xxd || sudo apt-get -y install vim-common
+
 
 # Install ubuntu 18.04 version of openssl1.0.0 if it's not known to our version of our distribution
 if ! apt-cache show libssl1.0.0 2>/dev/null|grep -q '^Package: libssl1.0.0$'
@@ -95,9 +98,7 @@ fi
 	if apt-cache show libcurl4 2>/dev/null|grep -q '^Package: libcurl4$'
 	then
 	  xxd /tmp/epsxe_x64 /tmp/epsxe_x64.xxd
-	  patch /tmp/epsxe_x64.xxd <(echo "6434c
-00019210: 2e73 6f2e 3300 6375 726c 5f65 6173 795f  .so.3.curl_easy_
-.")
+	  sed -i '6434c \00019210: 2e73 6f2e 3300 6375 726c 5f65 6173 795f  .so.3.curl_easy_' /tmp/epsxe_x64.xxd
 	  xxd -r /tmp/epsxe_x64.xxd "/home/$USER/ePSXe"
 	  rm -f /tmp/epsxe_x64.xxd
 	  if ! sha256sum -c --quiet <(echo "45fb1ee4cb21a5591de64e1a666e4c3cacb30fcc308f0324dc5b2b57767e18ee  /home/$USER/ePSXe")
