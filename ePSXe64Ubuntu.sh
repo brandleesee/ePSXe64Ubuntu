@@ -7,13 +7,14 @@
 # Brandon Lee Camilleri ( blc / brandleesee / Yrvyne ) can be reached on brandon.camilleri.90@gmail.com
 # ePSXe64Ubuntu repository can be found at https://github.com/brandleesee/ePSXe64Ubuntu
 
+# Leave anything with ~ unquoted so it expands properly.  This lets us handle complicated home directory locations
 ver="11.4"
 ins="ePSXe205linux_x64.zip"
-hme="/home/$USER"
-hid="/home/$USER/.epsxe"
-bkp="/home/$USER/ePSXe_backups/$(date "+%F-%T-%Z")"
-cor="/usr/share/applications"
-exe="/home/$USER/ePSXe"
+hme=~
+hid=~/.epsxe
+bkp=~/ePSXe_backups/$(date "+%F-%T-%Z")
+cor=~/.local/share/applications
+exe=~/.local/bin/ePSXe
 dls="https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master"
 opt=("Download" "Restore from backup")
 PS3="Choose from 1 to 3 above. "
@@ -29,7 +30,6 @@ sudo apt-get update
 sudo apt-get -y install wget sed
 # xxd was provided by vim-common on older distros
 sudo apt-get -y install xxd || sudo apt-get -y install vim-common
-
 
 # Install ubuntu 18.04 version of openssl1.0.0 if it's not known to our version of our distribution
 if ! apt-cache show libssl1.0.0 2>/dev/null|grep -q '^Package: libssl1.0.0$'
@@ -70,27 +70,29 @@ fi
 
 # Removes duplicate of ePSXe executable
 	if [ -e "$exe" ]; then
-	  sudo rm -rf "$exe"
+	  rm -rf "$exe"
 	fi
 
 # Downloads Icon
-	wget -q "$dls/.ePSXe.svg" -P "$hme"
+	mkdir -p "$hme/.local/share/ePSXe"
+	wget -q "$dls/.ePSXe.svg" -O "$hme/.local/share/ePSXe/ePSXe.svg"
 
 # Checks and creates icon data for Dash/Dock/Panel
 	if [ -e "$cor/ePSXe.desktop" ]; then
-	  sudo rm -rf "$cor/ePSXe.desktop"
+	  rm -rf "$cor/ePSXe.desktop"
 	fi
 	echo "[Desktop Entry]" > "/tmp/ePSXe.desktop"
 	{
 	  echo "Type=Application"
 	  echo "Terminal=false"
-	  echo "Exec=/home/$USER/ePSXe"
+	  echo "Exec=$exe"
 	  echo "Name=ePSXe"
 	  echo "Comment=Created using ePSXe64Ubuntu from https://github.com/brandleesee"
-	  echo "Icon=$hme/.ePSXe.svg"
+	  echo "Icon=$hme/.local/share/ePSXe/ePSXe.svg"
 	  echo "Categories=Game;Emulator;"
 	} >> "/tmp/ePSXe.desktop"
-	sudo mv "/tmp/ePSXe.desktop" "$cor/ePSXe.desktop"
+	mkdir -p "$cor"
+	mv "/tmp/ePSXe.desktop" "$cor/ePSXe.desktop"
 	
 # Sets up ePSXe
 	wget -q "https://www.epsxe.com/files/$ins" -P "/tmp" || wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
@@ -99,26 +101,27 @@ fi
 	then
 	  xxd /tmp/epsxe_x64 /tmp/epsxe_x64.xxd
 	  sed -i '6434c \00019210: 2e73 6f2e 3300 6375 726c 5f65 6173 795f  .so.3.curl_easy_' /tmp/epsxe_x64.xxd
-	  xxd -r /tmp/epsxe_x64.xxd "/home/$USER/ePSXe"
+	  xxd -r /tmp/epsxe_x64.xxd "$exe"
 	  rm -f /tmp/epsxe_x64.xxd
-	  if ! sha256sum -c --quiet <(echo "45fb1ee4cb21a5591de64e1a666e4c3cacb30fcc308f0324dc5b2b57767e18ee  /home/$USER/ePSXe")
+	  if ! sha256sum -c --quiet <(echo "45fb1ee4cb21a5591de64e1a666e4c3cacb30fcc308f0324dc5b2b57767e18ee  $exe")
 	  then
-	    tput setaf 1; echo "WARNING: patched /home/$USER/ePSXe did not match checksum, using original executable instead"; tput sgr0
-	    cp -f /tmp/epsxe_x64 "/home/$USER/ePSXe"
+	    tput setaf 1; echo "WARNING: patched $exe did not match checksum, using original executable instead"; tput sgr0
+	    cp -f /tmp/epsxe_x64 "$exe"
 	  fi
 	  rm -f /tmp/epsxe_x64
 	else
-	  mv "/tmp/epsxe_x64" "/home/$USER/ePSXe"
+	  mv "/tmp/epsxe_x64" "$exe"
 	fi
-	chmod +x "/home/$USER/ePSXe"
-	"/home/$USER/ePSXe"
+	chmod +x "$exe"
+	"$exe"
 
 # Transfers docs folder to .epsxe
+	mkdir -p "$hid"
 	mv "/tmp/docs" "$hid"
 
-# Activates BIOS HLE 
-	sed -i '11s/.*/BiosPath = /' "$hid/epsxerc"
-	sed -i '14s/.*/BiosHLE = 1/' "$hid/epsxerc"
+# Activates BIOS HLE
+	sed -i '11c \BiosPath = ' "$hid/epsxerc"
+	sed -i '14c \BiosHLE = 1' "$hid/epsxerc"
 
 # Restores Back-Up 
 	if [ -d "$bkp/.epsxe" ]; then
