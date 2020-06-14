@@ -19,7 +19,7 @@ opt=("Download" "Restore from backup")
 PS3="Choose from 1 to 3 above. "
 
 tput setaf 2; echo "Welcome to ePSXe64Ubuntu.sh script, $ver."; tput sgr0
-tput setaf 1; echo "When ePSXe windows appears on screen:"; tput sgr0
+tput setaf 1; echo "When ePSXe window appears on screen:"; tput sgr0
 tput setaf 1; echo "  Right click on icon in Dash/Dock/Panel"; tput sgr0
 tput setaf 1; echo "  Add to Favorites/Lock"; tput sgr0
 tput setaf 1; echo "  CLOSE ePSXe GUI to continue with the script."; tput sgr0
