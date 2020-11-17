@@ -97,6 +97,7 @@ fi
 # Sets up ePSXe
 	wget -q "https://www.epsxe.com/files/$ins" -P "/tmp" || wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
 	unzip -qq "/tmp/$ins" -d "/tmp"
+	mkdir -p "$(dirname $exe)"
 	if apt-cache show libcurl4 2>/dev/null|grep -q '^Package: libcurl4$'
 	then
 	  xxd /tmp/epsxe_x64 /tmp/epsxe_x64.xxd
