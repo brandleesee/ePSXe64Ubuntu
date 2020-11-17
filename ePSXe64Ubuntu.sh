@@ -8,7 +8,7 @@
 # ePSXe64Ubuntu repository can be found at https://github.com/brandleesee/ePSXe64Ubuntu
 
 # Leave anything with ~ unquoted so it expands properly.  This lets us handle complicated home directory locations
-ver="11.4"
+ver="11.5"
 ins="ePSXe205linux_x64.zip"
 hme=~
 hid=~/.epsxe
@@ -137,12 +137,12 @@ fi
 	  cp -r "$bkp/.epsxe/memcards/." "$hid/memcards"
 	  cp -r "$bkp/.epsxe/patches/." "$hid/patches"
 	  cp -r "$bkp/.epsxe/plugins/." "$hid/plugins"
-	  cp -r "$bkp/.epsxe/sstates/." "$hid/sstates"  
+	  cp -r "$bkp/.epsxe/sstates/." "$hid/sstates"
 	fi
 
 # Function for Shaders
 tput setaf 2; echo "Shaders Menu"; tput sgr0
-	select opt in "${opt[@]}" "Do nothing"; do 
+	select opt in "${opt[@]}" "Do nothing"; do
 	  case "$REPLY" in
 	    1 ) 
 	      wget -q "$dls/shaders.zip" -P "/tmp"
