@@ -20,6 +20,9 @@
 </tbody>
 </table>
 
+- 11.5
+  - Now script allows for multiple users - https://github.com/brandleesee/ePSXe64Ubuntu/pull/23.
+
 - 11.4
   - Simplify libcurl4 conflict detection by adding generic code that looks for the package instead of adding specific lines per affected distribution - https://pkgs.org/download/libcurl4
   - ecm no longer in repositories, thus, updated to other mirror
