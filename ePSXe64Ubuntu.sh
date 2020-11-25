@@ -18,6 +18,8 @@ exe=~/.local/bin/ePSXe
 dls="https://raw.githubusercontent.com/brandleesee/ePSXe64Ubuntu/master"
 opt=("Download" "Restore from backup")
 PS3="Choose from 1 to 3 above. "
+PROTO="http"
+MIRROR="archive.ubuntu.com"
 
 tput setaf 2; echo "Welcome to ePSXe64Ubuntu.sh script, $ver."; tput sgr0
 tput setaf 1; echo "When ePSXe window appears on screen:"; tput sgr0
@@ -34,7 +36,7 @@ sudo apt-get -y install xxd || sudo apt-get -y install vim-common
 # Install ubuntu 18.04 version of openssl1.0.0 if it's not known to our version of our distribution
 if ! apt-cache show libssl1.0.0 2>/dev/null|grep -q '^Package: libssl1.0.0$'
 then
-	wget https://mirrors.xmission.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb -O /tmp/libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb
+	wget ${PROTO}://${MIRROR}/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb -O /tmp/libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb
 	sudo dpkg --force-depends -i /tmp/libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb
 	sudo apt-get -y install -f
 	rm /tmp/libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb
@@ -42,7 +44,7 @@ fi
 
 if ! apt-cache show ecm 2>/dev/null|grep -q '^Package: ecm$'
 then
-	wget https://mirrors.xmission.com/ubuntu/pool/universe/c/cmdpack/ecm_1.03-1build1_amd64.deb -O /tmp/ecm_1.03-1build1_amd64.deb
+	wget ${PROTO}://${MIRROR}/ubuntu/pool/universe/c/cmdpack/ecm_1.03-1build1_amd64.deb -O /tmp/ecm_1.03-1build1_amd64.deb
 	sudo dpkg --force-depends -i /tmp/ecm_1.03-1build1_amd64.deb
 	sudo apt-get -y install -f
 	rm /tmp/ecm_1.03-1build1_amd64.deb
@@ -52,7 +54,7 @@ fi
 if apt-cache show libcurl4 2>/dev/null|grep -q '^Package: libcurl4$'
 then
 	sudo apt-get -y install libncurses5 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
-	wget https://mirrors.xmission.com/ubuntu/pool/main/c/curl3/libcurl3_7.58.0-2ubuntu2_amd64.deb -O /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
+	wget ${PROTO}://${MIRROR}/ubuntu/pool/main/c/curl3/libcurl3_7.58.0-2ubuntu2_amd64.deb -O /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb
 	sudo mkdir /tmp/libcurl3
 	sudo dpkg-deb -x /tmp/libcurl3_7.58.0-2ubuntu2_amd64.deb /tmp/libcurl3
 	sudo cp -vn /tmp/libcurl3/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 /usr/lib/x86_64-linux-gnu/libcurl.so.3
