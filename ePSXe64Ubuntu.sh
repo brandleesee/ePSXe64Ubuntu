@@ -27,7 +27,7 @@ get_sha256sum() {
 	if [[ ! -f "${filename}" ]]; then
 		tput setaf 1; echo "  ERROR: File ${filename} doesn't exist"; tput sgr0
 		exit 1
-	elif [ $(sha256sum "${filename}" | head -c 64) = "${filehash}" ]; then
+	elif [ "$(sha256sum "${filename}" | head -c 64)" = "${filehash}" ]; then
 		tput setaf 2; echo "${filename} matches provided sha256sum"; tput sgr0
 	else
 		tput setaf 1; echo "  ERROR: ${filename} doesn't match provided sha256sum"; tput sgr0
@@ -121,7 +121,7 @@ fi
 	} >> "/tmp/ePSXe.desktop"
 	mkdir -p "$cor"
 	mv "/tmp/ePSXe.desktop" "$cor/ePSXe.desktop"
-	
+
 # Sets up ePSXe
 	wget -q "https://www.epsxe.com/files/$ins" -P "/tmp" || wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
 	unzip -qq "/tmp/$ins" -d "/tmp"
@@ -152,7 +152,7 @@ fi
 	sed -i '11c \BiosPath = ' "$hid/epsxerc"
 	sed -i '14c \BiosHLE = 1' "$hid/epsxerc"
 
-# Restores Back-Up 
+# Restores Back-Up
 	if [ -d "$bkp/.epsxe" ]; then
 	  cp -r "$bkp/.epsxe/bios/." "$hid/bios"
 	  cp -r "$bkp/.epsxe/cheats/." "$hid/cheats"
@@ -172,13 +172,13 @@ fi
 tput setaf 2; echo "Shaders Menu"; tput sgr0
 	select opt in "${opt[@]}" "Do nothing"; do
 	  case "$REPLY" in
-	    1 ) 
+	    1 )
 	      wget -q "$dls/shaders.zip" -P "/tmp"
 	      unzip -qq "/tmp/shaders.zip" -d "$hid/shaders"
 	      echo "This choice has downloaded shaders from ePSXe64Ubuntu repository.";
 	      break
 	    ;;
-	    2 ) 
+	    2 )
 	      cp -r "$bkp/.epsxe/shaders/." "$hid/shaders"
 	      break
 	    ;;
@@ -190,5 +190,5 @@ tput setaf 2; echo "Shaders Menu"; tput sgr0
 # Removes clutter
 	rm -rf "/tmp/$ins"
 	rm -rf "/tmp/shaders.zip"
-	
+
 tput setaf 2; echo "Script finished."; tput sgr0
