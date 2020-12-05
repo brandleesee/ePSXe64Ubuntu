@@ -1,0 +1,21 @@
+---
+minimum_pre_commit_version: 1.15.2
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.5.0
+  hooks:
+  - id: check-merge-conflict  # Check for files that contain merge conflict strings.
+    language_version: python3
+  - id: trailing-whitespace   # Trims trailing whitespace.
+    args: [--markdown-linebreak-ext=md]
+    language_version: python3
+  - id: mixed-line-ending     # Replaces or checks mixed line ending.
+    args: [--fix=lf]
+    language_version: python3
+  - id: end-of-file-fixer     # Makes sure files end in a newline and only a newline.
+    language_version: python3
+  - id: check-yaml
+- repo: https://github.com/gruntwork-io/pre-commit
+  rev: v0.1.3
+  hooks:
+  - id: shellcheck

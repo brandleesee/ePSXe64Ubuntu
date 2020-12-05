@@ -39,14 +39,14 @@
     - Linux Mint still uses apt-get out-of-the-box instead of Apt.
 	- issue: https://github.com/cromat/ePSXe64Ubuntu/commit/9deb4bc17ea5e53d30c6023faca060ac612be6e4
   - Libcurl 3 - 4 issue on Linux Mint 19 (https://forums.linuxmint.com/viewtopic.php?t=274477)
-  
+
   - https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php - to make sure *elif* statement is used correctly
   - https://forums.linuxmint.com/viewtopic.php?t=263277 - checked where packages are downloaded from - resulted to be from ubuntu
   - https://www.rootusers.com/check-which-linux-mint-version/
   - https://www.tldp.org/LDP/abs/html/comparison-ops.html
   - https://stackoverflow.com/a/4277753
   - https://stackoverflow.com/questions/2237080/how-to-compare-strings-in-bash
-  
+
 - 11
   - easier install (one-liner in terminal kicks up the script)
   - removed quiet mode so as to have visible any errors while installing dependencies
@@ -91,7 +91,7 @@
   - Wrote clearer GUI instructions.
   - Removed most titles as they were misleading and did not promulgate useful information.
   - Commented sections and skipped lines for easier reference.
-  
+
 - 9.1
   - Corrected 1st line. Missing `/`.
 
@@ -120,7 +120,7 @@
 - 8.1
   - Proper branding of ePSXe64Ubuntu.
   - Added ecm tools.
-  
+
 - 8
   - Partial backup function.
 
@@ -175,7 +175,7 @@
   - Changes from original:
     - duplicate shaders removed
     - super-eagle had different content in files there for kept and both added number
-	
+
 - 5
   - Replaced Shaders from Pete's Domain with the pack in ePSXe.com
   - Improved script
