@@ -24,7 +24,7 @@
   - Now using Ubuntu's archive for necessary packages.
   - Checksum is implemented.
   - Spellcheck used to correct common errors.
-  
+
 - 11.5
   - Now script allows for multiple users - https://github.com/brandleesee/ePSXe64Ubuntu/pull/23.
 
