@@ -21,16 +21,16 @@ PS3="Choose from 1 to 3 above. "
 PROTO="http"
 MIRROR="archive.ubuntu.com"
 
-get_sha256sum() {
-	filename=$1
+check_sha256sum() {
+	tempfile=$1
 	filehash=$2
-	if [[ ! -f "${filename}" ]]; then
-		tput setaf 1; echo "  ERROR: File ${filename} doesn't exist"; tput sgr0
+	if [ ! -f "${tempfile}" ]; then
+		tput setaf 1; echo "  ERROR: File ${tempfile} doesn't exist"; tput sgr0
 		exit 1
-	elif [ $(sha256sum "${filename}" | head -c 64) = "${filehash}" ]; then
-		tput setaf 2; echo "${filename} matches provided sha256sum"; tput sgr0
+	elif [ "$(sha256sum "${tempfile}" | head -c 64)" = "${filehash}" ]; then
+		tput setaf 2; echo "${tempfile} matches provided sha256sum"; tput sgr0
 	else
-		tput setaf 1; echo "  ERROR: ${filename} doesn't match provided sha256sum"; tput sgr0
+		tput setaf 1; echo "  ERROR: ${tempfile} doesn't match provided sha256sum"; tput sgr0
 		exit 1
 	fi
 }
@@ -54,7 +54,7 @@ then
 	tempfile="/tmp/${filename}"
 	filehash="fcadc659174561b7a925e4f17e9de7451f4fb556a032fea1ed2ff800ed3a285e"
 	wget "${PROTO}://${MIRROR}/ubuntu/pool/main/o/openssl1.0/${filename}" -O "${tempfile}"
-	get_sha256sum "${tempfile}" "${filehash}"
+	check_sha256sum "${tempfile}" "${filehash}"
 	sudo dpkg --force-depends -i "${tempfile}"
 	sudo apt-get -y install -f
 	rm "${tempfile}"
@@ -65,8 +65,8 @@ then
 	filename="ecm_1.03-1build1_amd64.deb"
 	tempfile="/tmp/${filename}"
 	filehash="3889b926bcaed64bfc66f20c27f943e63ec41c701d1d50682b21f06f95d6fcfd"
-        wget "${PROTO}://${MIRROR}/ubuntu/pool/universe/c/cmdpack/${filename}" -O "${tempfile}"
-	get_sha256sum "${tempfile}" "${filehash}"
+	wget "${PROTO}://${MIRROR}/ubuntu/pool/universe/c/cmdpack/${filename}" -O "${tempfile}"
+	check_sha256sum "${tempfile}" "${filehash}"
 	sudo dpkg --force-depends -i "${tempfile}"
 	sudo apt-get -y install -f
 	rm "${tempfile}"
@@ -75,12 +75,12 @@ fi
 # Installs required packages per OS
 if apt-cache show libcurl4 2>/dev/null|grep -q '^Package: libcurl4$'
 then
+	sudo apt-get -y install libncurses5 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
 	filename="libcurl3_7.58.0-2ubuntu2_amd64.deb"
 	tempfile="/tmp/${filename}"
 	filehash="26d8e98614a55013b35afac465081ec17c9d931ee11f648bca7c3cbaefb404af"
-	sudo apt-get -y install libncurses5 libsdl-ttf2.0-0 libssl1.0.0 ecm unzip
 	wget "${PROTO}://${MIRROR}/ubuntu/pool/main/c/curl3/${filename}" -O "${tempfile}"
-	get_sha256sum "${tempfile}" "${filehash}"
+	check_sha256sum "${tempfile}" "${filehash}"
 	sudo mkdir /tmp/libcurl3
 	sudo dpkg-deb -x "${tempfile}" /tmp/libcurl3
 	sudo cp -vn /tmp/libcurl3/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 /usr/lib/x86_64-linux-gnu/libcurl.so.3
@@ -121,7 +121,7 @@ fi
 	} >> "/tmp/ePSXe.desktop"
 	mkdir -p "$cor"
 	mv "/tmp/ePSXe.desktop" "$cor/ePSXe.desktop"
-	
+
 # Sets up ePSXe
 	wget -q "https://www.epsxe.com/files/$ins" -P "/tmp" || wget -q "http://www.epsxe.com/files/$ins" -P "/tmp"
 	unzip -qq "/tmp/$ins" -d "/tmp"
@@ -152,7 +152,7 @@ fi
 	sed -i '11c \BiosPath = ' "$hid/epsxerc"
 	sed -i '14c \BiosHLE = 1' "$hid/epsxerc"
 
-# Restores Back-Up 
+# Restores Back-Up
 	if [ -d "$bkp/.epsxe" ]; then
 	  cp -r "$bkp/.epsxe/bios/." "$hid/bios"
 	  cp -r "$bkp/.epsxe/cheats/." "$hid/cheats"
@@ -172,13 +172,13 @@ fi
 tput setaf 2; echo "Shaders Menu"; tput sgr0
 	select opt in "${opt[@]}" "Do nothing"; do
 	  case "$REPLY" in
-	    1 ) 
+	    1 )
 	      wget -q "$dls/shaders.zip" -P "/tmp"
 	      unzip -qq "/tmp/shaders.zip" -d "$hid/shaders"
 	      echo "This choice has downloaded shaders from ePSXe64Ubuntu repository.";
 	      break
 	    ;;
-	    2 ) 
+	    2 )
 	      cp -r "$bkp/.epsxe/shaders/." "$hid/shaders"
 	      break
 	    ;;
@@ -190,5 +190,5 @@ tput setaf 2; echo "Shaders Menu"; tput sgr0
 # Removes clutter
 	rm -rf "/tmp/$ins"
 	rm -rf "/tmp/shaders.zip"
-	
+
 tput setaf 2; echo "Script finished."; tput sgr0

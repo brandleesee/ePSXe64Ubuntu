@@ -91,5 +91,3 @@ sudo rm /usr/lib/x86_64-linux-gnu/libcurl.so.3
 <p align="center" ><strong>restart</strong> pc</p>
 
 <img src="https://i.imgur.com/FiBbK8w.png" />
-
-    
