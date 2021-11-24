@@ -6,11 +6,12 @@
 
 <h1 align="center">ePSXe64Ubuntu</h1>
 
-<p align="center"><strong>NOTICE</strong><br>As of 24th November 2021, development on this script is discontinued, however, any patches to improve or correct same are accepted.<br>Furthermore, should ePSXe for Linux have a new version, development on this script will resume.</p>
+<p align="center"><strong>NOTICE<br>As of the 24th of November 2021, development on this script is officially discontinued.<br>However, any patches to improve or correct same are accepted.<br>Furthermore, should ePSXe for Linux have a new version, development on this script will resume.</strong></p>
 
-<h2 align="center">Version 11.6</h2>
+<details>
+	<summary><h2 align="center">Version 11.6</h2></summary>
 
-<p align="center"><a href="https://github.com/brandleesee/ePSXe64Ubuntu/blob/master/CHANGELOG.md">Changelog</a> | <a href="https://chrismartinphotography.files.wordpress.com/2013/01/2012-landscapes-c2a9-christopher-martin-93441.jpg">Background</a> | <a href="http://xenlism.github.io/minimalism/">Minimalism GTK3 Theme</a> | <a href="https://github.com/xenlism/Storm">Storm Icon Set</a> | <a href="https://b00merang.weebly.com/windows-10.html">Windows 10 GTK Pack</a></p>
+<p align="center"><a href="https://chrismartinphotography.files.wordpress.com/2013/01/2012-landscapes-c2a9-christopher-martin-93441.jpg">Background</a> | <a href="http://xenlism.github.io/minimalism/">Minimalism GTK3 Theme</a> | <a href="https://github.com/xenlism/Storm">Storm Icon Set</a> | <a href="https://b00merang.weebly.com/windows-10.html">Windows 10 GTK Pack</a></p>
 
 <img src="https://i.imgur.com/2DlxMw4.png" />
 
@@ -100,6 +101,7 @@ sudo rm /usr/lib/x86_64-linux-gnu/libcurl.so.3
 <p align="center" ><strong>restart</strong> pc</p>
 
 <img src="https://i.imgur.com/FiBbK8w.png" />
+</details>
 
 <details>
   <summary><h2 align="center">changelog</h2></summary>
