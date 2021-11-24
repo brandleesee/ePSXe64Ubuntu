@@ -1,4 +1,4 @@
-<h1 align="center">!!! DuckStation is a modern and faster alternative to ePSXe !!!</h1>
+<h1 align="center">DuckStation is a modern and faster alternative to ePSXe</h1>
 
 <p align="center"><a href="https://github.com/stenzek/duckstation/">DuckStation on GitHub</a> | <a href="https://github.com/stenzek/duckstation/#linux">Linux Instructions</a></p>
 
