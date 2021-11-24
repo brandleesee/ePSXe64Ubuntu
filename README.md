@@ -1,3 +1,9 @@
+<h1 align="center">!!! DuckStation is a modern and faster alternative to ePSXe !!!</h1>
+
+<p align="center"><a href="https://github.com/stenzek/duckstation/">DuckStation on GitHub</a> | <a href="https://github.com/stenzek/duckstation/#linux">Linux Instructions</a></p>
+
+<img src="https://raw.githubusercontent.com/stenzek/duckstation/md-images/bigduck.png" />
+
 <h1 align="center">ePSXe64Ubuntu</h1>
 
 <p align="center">Version 11.6 | <a href="https://github.com/brandleesee/ePSXe64Ubuntu/blob/master/CHANGELOG.md">Changelog</a> | <a href="https://chrismartinphotography.files.wordpress.com/2013/01/2012-landscapes-c2a9-christopher-martin-93441.jpg">Background</a> | <a href="http://xenlism.github.io/minimalism/">Minimalism GTK3 Theme</a> | <a href="https://github.com/xenlism/Storm">Storm Icon Set</a> | <a href="https://b00merang.weebly.com/windows-10.html">Windows 10 GTK Pack</a></p>
@@ -19,7 +25,6 @@
 - [x] lock-to-launcher instructions
 - [x] interactive Shaders back-up function
 - [x] `libcurl 3` & `libcurl 4` now co-exist enabling software like Kodi etc to work simultaneously with ePSXe
-- [ ] test & add more shaders ([bundle to test](https://www.ngemu.com/threads/links-and-guides-to-custom-shaders-for-petes-opengl2-plugin.76098/page-51#post-2722008))
 
 <h2 align="center">typical installation</h2>
 
