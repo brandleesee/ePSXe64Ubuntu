@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ePSXe emulator is property of ePSXe team, http://epsxe.com/, under Proprietary license.
-# ePSXe64Ubuntu.sh and formerly e64u.sh scripts are property of Brandon Lee Camilleri ( blc / brandleesee / Yrvyne , https://twitter.com/brandleesee , https://www.reddit.com/user/Yrvyne/ )
+# ePSXe64Ubuntu.sh and formerly e64u.sh scripts are property of Brandon Lee Camilleri ( blc / brandleesee / Yrvyne , https://www.reddit.com/user/Yrvyne/, https://www.blc.mt )
 # ePSXe64Ubuntu.sh and formerly e64u.sh scripts are protected under the vestiges of GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007.
 # Disclaimer: Brandon Lee Camilleri ( blc / brandleesee / Yrvyne ) does not assume any responsibilities and shall not be held liable should ePSXe64Ubuntu.sh, e64u.sh, shaders.zip, .ePSXe.svg CHANGELOG.md and/or README.md fail in their intended purpose, attempt and usage and/or break the system/s being used on.
 # Brandon Lee Camilleri ( blc / brandleesee / Yrvyne ) can be reached on brandon.camilleri.90@gmail.com
